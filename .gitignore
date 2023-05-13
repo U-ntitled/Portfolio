@@ -6,6 +6,8 @@ node_modules
 .env
 /.pnp
 .pnp.js
+.next
+client
 
 # testing
 /coverage
