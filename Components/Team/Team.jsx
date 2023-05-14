@@ -47,7 +47,7 @@ function Team() {
         <div className="h-[20%] flex flex-col justify-evenly">
           {/* Title of the Section */}
           <div className="text-center">
-            <h2 className='font-semibold text-[3rem]'>MEET THE MEMBERS OF OUR TEAM</h2>
+            <h2 className='font-semibold text-[2rem]'>MEET THE MEMBERS OF OUR TEAM</h2>
           </div>
 
           {/* Description below the title*/}
