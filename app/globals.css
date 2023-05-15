@@ -38,7 +38,7 @@ body{
 }
 @media screen and (max-width: 483px) {
   .footer-title{
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
   }
@@ -53,6 +53,6 @@ body{
   }
 }
 
-p,a{
+p, a {
   font-size: 16px;
 }
