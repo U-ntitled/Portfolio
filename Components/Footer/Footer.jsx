@@ -3,7 +3,7 @@ import './style.module.css'
 
 function Footer() {
   return (
-    <div className='bg-[#171135] flex flex-col space-y-3'>
+    <div className='bg-[#171135] flex flex-col space-y-3 text-white'>
       <div className="flex justify-between items-center flex-wrap footer-title space-y-3 w-full">
           <img src='LOGO.svg' alt='logo' className='footer-logo'/>
         <div className="flex space-x-3 items-center">

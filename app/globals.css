@@ -17,7 +17,9 @@
         @apply font-Exo2 text-[24px] uppercase
     }  
 }
-
+body{
+  font-family: 'Exo2';
+}
 
 @keyframes linear {
      0% {
