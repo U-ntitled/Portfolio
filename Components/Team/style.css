@@ -6,6 +6,9 @@
         'upLeft center upRight'
         'bLeft center bRight';
 }
+/* .upLeft, .upRight, .bLeft, .bRight, .center{
+    width: 50%;
+} */
 .upLeft{
     grid-area: upLeft;
 }
@@ -22,4 +25,69 @@
 }
 .bRight{
     grid-area: bRight;
+}
+
+@media screen and (max-width: 840px){
+    .general-content{
+        height: 130vh;
+    }
+    .titles{
+        height: 20%;
+    }
+    .members-cards{
+        height: 80%;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            'upLeft upRight'
+            'center center'
+            'bLeft bRight';
+    }
+    .upLeft, .upRight, .bLeft, .bRight{
+        height: 90%;
+        width: 80%;
+    }
+    .center{
+        height: 90%;
+        width: 40.2%;
+    }
+}
+@media screen and (max-width: 576px){
+    .upLeft, .upRight, .bLeft, .bRight{
+        width: 90%;
+    }
+    .upRight,.bRight,.bLeft,.upLeft{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .bLeft,.upLeft{
+        margin-left: 0;
+    }
+    .center{
+        width: 45%;
+    }
+    .fnames{
+        font-size: .8rem;
+    }
+    .domain{
+        font-size: 0.75rem;
+    }
+    .icons{
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media screen and (max-width:390px) {
+    .general-content{
+        height: 150vh;
+    }
+    .fnames,.domain{
+        font-size: 0.6rem;
+    }
+    .icons{
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
