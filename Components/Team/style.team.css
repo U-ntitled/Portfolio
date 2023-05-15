@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     margin: 1.5rem;
+    padding-bottom: .7rem;
     border-radius: .75rem;
     -webkit-border-radius: .75rem;
     -moz-border-radius: .75rem;
@@ -18,6 +19,7 @@
     -o-border-radius: .75rem;
     align-items: center;
     justify-content: space-evenly;
+    height: 90%;
 }
 .upLeft{
     grid-area: upLeft;
@@ -36,16 +38,18 @@
 .bRight{
     grid-area: bRight;
 }
-
-@media screen and (max-width: 840px){
+.general-content{
+    overflow-x: hidden;
+}
+@media screen and (max-width: 985px){
     .general-content{
-        height: 160vh;
+        height: 130vh;
     }
     .titles{
-        height: 20%;
+        height: 18%;
     }
     .members-cards{
-        height: 80%;
+        height: 82%;
         align-items: center;
         justify-items: center;
         grid-template-columns: 1fr 1fr;
@@ -56,52 +60,84 @@
             'bLeft bRight';
     }
     .upLeft, .upRight, .bLeft, .bRight{
-        height: 90%;
-        width: 80%;
+        height: 92%;
+        width: 85%;
     }
     .center{
-        height: 90%;
-        width: 40.2%;
+        height: 92%;
+        width: 42.7%;
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 633px){
+    .members-cards{
+        height: 75%;
+    }
     .upLeft, .upRight, .bLeft, .bRight{
         width: 90%;
-    }
-    .upRight,.bRight,.bLeft,.upLeft{
-        margin-right: 0;
-        margin-left: 0;
-    }
-    .bLeft,.upLeft{
-        margin-left: 0;
+        /* height: 80%; */
+        margin: 0;
     }
     .center{
+        /* height: 80%; */
         width: 45%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .fnames{
-        font-size: .8rem;
+        font-size: .9rem;
     }
     .domain{
-        font-size: 0.75rem;
+        font-size: 0.85rem;
     }
     .icons{
         width: 2rem;
         height: 2rem;
     }
 }
-@media screen and (max-width:390px) {
+@media screen and (max-width:496px) {
+    .members-cards{
+        height: auto;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.8rem;
+    }   
+    .contacts{
+        margin-top: .5rem;
+    }
+    .upLeft, .upRight, .bLeft, .bRight, .center{
+        margin: 0;
+        width: 80%;
+        padding-top: .8rem;
+    } 
     .general-content{
-        height: 150vh;
+        height: auto;
     }
-    .fnames,.domain{
-        font-size: 0.6rem;
+    .fnames{
+        font-size: 1rem;
     }
+    .domain{
+        font-size: .8rem;
+    }
+    .avatar{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+@media screen and (max-width:390px) {
+    
+    .upLeft, .upRight, .bLeft, .bRight, .center{
+        width: 100%;
+    } 
     .icons{
         margin-left: 0;
         margin-right: 0;
     }
 }
-@media screen and (max-height:900px) and (min-width:841px){
+/* @media screen and (max-height:900px) and (min-width:841px){
     .general-content{
         height: 120vh;
     }
@@ -110,4 +146,4 @@
     .general-content{
         height: 140vh;
     }
-}
+} */
