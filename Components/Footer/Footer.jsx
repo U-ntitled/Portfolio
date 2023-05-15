@@ -14,7 +14,7 @@ function Footer() {
         </div>
       </div>
       <div className="flex justify-center items-center w-full ">
-        <div className="flex justify-between items-start w-[85%] flex-wrap footer space-y-5">
+        <div className="flex justify-between items-start w-[85%] flex-wrap footer space-y-3 tg:space-y-0">
           <div className="flex flex-col space-y-2  ">
             <h6 className='uppercase font-bold text-xl'>overview</h6>
             <a className='a opacity-70' href='#about'>About us</a>
