@@ -1,14 +1,16 @@
 @keyframes leftToRight {
       from {
-          left:0
+        left: 5%;
+        opacity: 0;
+        transform: scaleX(1);
       }
       to{
-          left:100%
+        left:80%;
+        opacity: 1;
+        transform: scaleX(1.2);
       }
 }
 
 .animate {
-     position: absolute;
-     left: 0;
-     animation: leftToRight 1s ease-in-out infinite ;
+     animation: leftToRight 1.5s linear infinite ;
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.module.css'
+import  styles  from './style.module.css'
 
 function Hero() {
   return (
@@ -28,13 +28,13 @@ function Hero() {
            </nav>
            <div>
                   <span className='absolute left-[40%] z-0'>
-                      <img src='blendToDown.svg' alt='graphique element' />
+                      <img src='blendToDown.svg' className='w-[20rem]' alt='graphique element' />
                   </span>
-                  <span className='absolute bottom-0 right-5'>
-                      <img src='blendToUp.svg'  alt='graphique element' />
+                  <span className='absolute bottom-2 right-2'>
+                      <img src='blendToUp.svg' className='w-[22rem]'  alt='graphique element' />
                   </span>
            </div>
-           <div className=' w-[95%] h-[75vh]  flex justify-between  m-auto md:w-[80%] lg:w-[85%]'>
+           <div className=' w-[95%] h-[75vh]  flex justify-between   m-auto md:w-[80%] lg:w-[85%]'>
                  <div className=' flex-1 flex mt-20 justify-center z-10'>
                     <div className=' w-full  p-4 lg:w-[85%]'>
                         <h1 className=' w-[15ch] text-[36px] md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize'>
@@ -51,17 +51,15 @@ function Hero() {
                          
 
                       </div>
-                       
-                      <h3 className=' flex  items-center gap-3 text-[24px] text-white font-medium '>
-                          Let's connect 
-                          <span className=' ml-2 border-[3px] rounded-full w-24 h-10 relative'>
-                               <a href='#contact' className=''>
-                                    <span className='bg-white w-3 h-3 rounded-full  absolute top-[35%]'></span>
-                               </a>
-                               
-                          </span>
-                         
-                      </h3>
+                      <a href='#contact'>
+                        <h3 className=' flex  items-center gap-3 text-[24px] text-white font-medium '>
+                            Let's connect 
+                            <span className=' ml-2 border-[3px] rounded-full w-24 h-10 relative'>
+                                <span className={`${styles.animate} bg-white w-3 h-3 rounded-full  absolute top-[35%] `}></span>
+                            </span>
+                        </h3>
+                      </a> 
+                     
                       <div className='py-10'>
                             <ul className='flex  '>
                                  <li><a className='p-3  bg-slate-500 rounded-full '>Gi</a></li>
@@ -71,8 +69,8 @@ function Hero() {
                       </div>
                     </div>
                  </div>
-                 <div className=' hidden flex-1  lg:flex justify-center'>
-                      <img src='hero.svg' style={{width:600,height:700}}/>
+                 <div className=' hidden flex-1  lg:flex justify-center '>
+                      <img src='hero.svg' className='w-[600px]'/>
                  </div>
            </div>
            <div className=''>
