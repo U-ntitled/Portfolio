@@ -1,24 +1,24 @@
 import React from 'react'
-import './style.module.css'
+import styles from './style.module.css'
 
 function Transition() {
   return (
-    <div id="contact_section" className="">
-        <div className="text_section">
-            <div className="title_text">
-                <h2>LET'S CREATE <span className="green">SOMETHING AMAZING</span> TOGETHER</h2>
+    <div id={`${styles.contact_section}`} className="">
+        <div className={styles.text_section}>
+            <div className={styles.title_text}>
+                <h2>LET'S CREATE <span className={styles.green}>SOMETHING AMAZING</span> TOGETHER</h2>
             </div>
-            <p className="text">
+            <p className={styles.text}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet nobis perspiciatis ab ipsa. 
             </p>
 
-            <div className="purple_button">
+            <div className={styles.purple_button}>
                 <a href="#">GET IN TOUCH WITH US</a>
             </div>
         </div>
 
 
-        <div className="image_representation">
+        <div className={styles.image_representation}>
             <img src="Saly-31 1.svg" alt="Communication illustration"/>
         </div>
     </div>    
