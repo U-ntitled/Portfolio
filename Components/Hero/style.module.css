@@ -1,0 +1,14 @@
+@keyframes leftToRight {
+      from {
+          left:0
+      }
+      to{
+          left:100%
+      }
+}
+
+.animate {
+     position: absolute;
+     left: 0;
+     animation: leftToRight 1s ease-in-out infinite ;
+}

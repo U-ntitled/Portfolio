@@ -2,7 +2,58 @@ import React from 'react'
 
 function Service() {
   return (
-    <div>Service</div>
+    <div className='bg-[#0A0E26] h-[100vh] text-[#D9D9D9] py-[15vh]'>
+      <h1 className='font-semibold text-[2rem] text-center font-Exo2'>OUR SERVICES</h1>
+      <p className='text-center text-[15px]'>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatibus labore ullam repellat aliquid! <br />
+        Lorem ipsum dolor sit amet consectetur.
+      </p>
+      <div className="flex flex-row justify-around mt-[12vh]">
+        <div className='ml-[2em] text-center justify-around'>
+          <div className='w-[11vw] h-[17vh] rounded-2xl text-center bg-[#c525ea1a]  ml-[32%]'>
+            .
+          </div>
+          <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
+              UI/UX DESIGN
+          </h3>
+          <p className='text-center text-[15px]'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Lorem, ipsum dolor.
+          </p>
+        </div>
+
+        <div className='ml-[2em] text-center justify-around'>
+          <div className='w-[11vw] h-[17vh] rounded-2xl text-center bg-[#c525ea1a]  ml-[32%]'>
+            .
+          </div>
+          <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
+              UI/UX DESIGN
+          </h3>
+          <p className='text-center text-[15px]'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Lorem, ipsum dolor.
+          </p>
+        </div>
+
+        <div className='ml-[2em] text-center justify-around'>
+          <div className='w-[11vw] h-[17vh] rounded-2xl text-center bg-[#c525ea1a]  ml-[32%]'>
+            .
+          </div>
+          <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
+              UI/UX DESIGN
+          </h3>
+          <p className='text-center text-[15px]'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Lorem, ipsum dolor.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
   )
 }
 
