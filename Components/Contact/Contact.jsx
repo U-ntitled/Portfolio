@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div id={`${styles.contact_form_section}`} className="">
         <form className={styles.contact_form} method="post">
-            <h2 className={styles.form_title}>CONTACT US</h2>
+            <h2 className={`${styles.form_title} h2`}>CONTACT US</h2>
             
             <input 
             className={styles.input_text}
