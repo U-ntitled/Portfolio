@@ -2,4 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'Exo2';
+    src: url('../fonts/Exo2-VariableFont_wght.ttf');
+}
+@layer components{
+    .h1{
+        @apply font-Exo2 text-[4rem] uppercase
+    }
+    .h2{
+        @apply font-Exo2 text-[2rem]  uppercase
+    }
+    .h3{
+        @apply font-Exo2 text-[24px] uppercase
+    }  
+}
 
+
+@keyframes linear {
+     0% {
+         left: 5%;
+     }
+     100%{
+          left: 85%;
+     }
+
+}
