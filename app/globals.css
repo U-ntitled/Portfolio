@@ -2,28 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: 'Exo2';
+    src: url('../fonts/Exo2-VariableFont_wght.ttf');
+}
+@layer components{
+    .h1{
+        @apply font-Exo2 text-[4rem] uppercase
+    }
+    .h2{
+        @apply font-Exo2 text-[2rem]  uppercase
+    }
+    .h3{
+        @apply font-Exo2 text-[24px] uppercase
+    }  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes linear {
+     0% {
+         left: 5%;
+     }
+     100%{
+          left: 85%;
+     }
+
 }
 
 @media screen and (max-width: 795px) {

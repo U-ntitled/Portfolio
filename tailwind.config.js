@@ -12,6 +12,14 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily:{
+           Exo2:['Exo2']
+      },
+      backgroundColor:{
+           bgprimary:'#0A0E26',
+           btnprimary:'#B73BF0'
+      },
+
     
       screens: {
         'lg': '843px',

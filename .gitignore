@@ -2,11 +2,14 @@
 
 # dependencies
 node_modules
-node_modules
 .env
 /.pnp
 .pnp.js
 .next
+<<<<<<< HEAD
+client
+=======
+>>>>>>> a5c83223b2912b96bcaa9826a40a8c96ac50518b
 
 # testing
 /coverage
