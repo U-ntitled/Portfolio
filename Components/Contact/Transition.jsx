@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 function Transition() {
   return (
-    <div id={`${styles.contact_section}`} className="">
+    <div id={`${styles.contact_section}`} className="space-section">
         <div className={styles.text_section}>
             <div className={styles.title_text}>
                 <h2 className="h2">LET'S CREATE <span className={`${styles.green}`}>SOMETHING AMAZING</span> TOGETHER</h2>

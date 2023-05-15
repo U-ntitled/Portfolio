@@ -3,7 +3,7 @@ import styles from './style.module.css'
 
 function Contact() {
   return (
-    <div id={`${styles.contact_form_section}`} className="">
+    <div id={`${styles.contact_form_section}`} className="space-section">
         <form className={styles.contact_form} method="post">
             <h2 className={`${styles.form_title} h2`}>CONTACT US</h2>
             
@@ -17,7 +17,7 @@ function Contact() {
             <textarea 
             name="message" 
             cols="30" 
-            rows="15" 
+            rows="6" 
             placeholder="Write your message here..."
             className={styles.area}></textarea>
             

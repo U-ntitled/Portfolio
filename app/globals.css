@@ -56,3 +56,9 @@ body{
 p,a{
   font-size: 16px;
 }
+.space-section{
+ padding: 4% 10%;
+}
+.copyRight{
+  font-size: 20px;
+}

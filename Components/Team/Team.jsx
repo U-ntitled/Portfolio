@@ -40,7 +40,7 @@ function Team() {
     }
   ]
   return (
-    <div className='bg-[#0A0E26] h-[100vh] w-[100vw] flex flex-col general-content items-center font-Exo2'>
+    <div className='bg-[#0A0E26] h-[100vh] w-[100vw] flex flex-col general-content items-center font-Exo2 space-section'>
       <div className="h-full flex flex-col justify-between  items-center w-full">
 
         {/* Texts section */}

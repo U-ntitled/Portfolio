@@ -7,6 +7,7 @@ import Team from '../Components/Team/Team'
 import Transition from '../Components/Contact/Transition'
 import Contact from '../Components/Contact/Contact'
 import Footer from '../Components/Footer/Footer'
+import CopyRight from '@/Components/Footer/CopyRight'
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         </section>
         <footer>
           <Footer/>
+          <CopyRight/>
         </footer>
       </main>
     </>

@@ -5,7 +5,7 @@ import {motion,easeInOut} from 'framer-motion'
 
 function Footer() {
   return (
-    <div className='bg-[#171135] flex flex-col space-y-3 text-white'>
+    <div className='bg-[#171135] flex flex-col space-y-3 text-white space-section'>
       <div className="flex justify-between items-center flex-wrap footer-title space-y-3 w-full">
           <motion.img 
           initial={{x: -100 ,opacity:0}}
@@ -41,7 +41,7 @@ function Footer() {
             <a className='opacity-70' href='#project'>Mobile Development</a>
           </div>
           <div className="flex flex-col space-y-4 md:w-[40%] w-[100%]">
-              <h2 className='h2 font-bold leading-tight'>LET’ S MAKE YOUR <span className='text-[#37BB8A]'>VISION</span> INTO <span className='text-[#37BB8A]'>REALITY</span></h2>
+              <h2 className='h3 font-bold leading-tight'>LET’ S MAKE YOUR <span className='text-[#37BB8A]'>VISION</span> INTO <span className='text-[#37BB8A]'>REALITY</span></h2>
               <button className='bg-[#C525EA] flex justify-center items-center text-[#fff] py-2 w-[90%] btn '>SHARE US YOUR PROJECT</button>
           </div>
         </div>

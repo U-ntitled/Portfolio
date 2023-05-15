@@ -2,7 +2,7 @@ import React from 'react'
 
 function Service() {
   return (
-    <div className='bg-[#0A0E26] h-[100vh] text-[#D9D9D9] py-[15vh]'>
+    <div className='bg-[#0A0E26] h-[100vh] text-[#D9D9D9] py-[15vh] space-section'>
       <h1 className='font-semibold text-[2rem] text-center font-Exo2'>OUR SERVICES</h1>
       <p className='text-center text-[15px]'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatibus labore ullam repellat aliquid! <br />
