@@ -53,4 +53,6 @@ body{
   }
 }
 
-
+p,a{
+  font-size: 16px;
+}
