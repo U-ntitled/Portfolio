@@ -19,6 +19,7 @@ module.exports = {
            bgprimary:'#0A0E26',
            btnprimary:'#B73BF0'
       },
+      
 
     
       screens: {

@@ -6,9 +6,9 @@ function About() {
   return (
     <div className='bg-[#171135] flex flex-row justify-around h-[100vh]'>
       <div className='w-[36%] mt-[10%] text-[#D9D9D9]'>
-        <h1 className='uppercase font-bold text-3xl '>
+        <h2 className='uppercase font-bold text-3xl '>
           WHO ARE US ?
-        </h1>
+        </h2>
 
         <h3 className='mt-[7vh] font-bold text-xl ml-[-3vw]' ><span className='font-bold text-xl text-[#41B192] ml-[-1vw] mr-[1vw]'>------</span>We are a <span className='text-[#C525EA]'>TEAM</span></h3>
         <p className='mt-[5vh] text-[12px] font-bold'>
