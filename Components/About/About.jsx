@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.module.css'
+// import './style.module.css'
 
 
 function About() {
@@ -24,8 +24,6 @@ function About() {
             
         </div>
       </div>
-
-    
     </div>
   )
 }
