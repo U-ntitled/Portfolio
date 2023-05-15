@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.module.css'
+import './style.css'
 
 function Team() {
   const members = [
@@ -47,11 +47,11 @@ function Team() {
         <div className="h-[20%] flex flex-col justify-evenly titles">
           {/* Title of the Section */}
           <div className="text-center">
-            <h2 className='font-semibold text-[2rem]'>MEET THE MEMBERS OF OUR TEAM</h2>
+            <h2 className='font-semibold text-[2rem] text-[#D9D9D9]'>MEET THE MEMBERS OF OUR TEAM</h2>
           </div>
 
           {/* Description below the title*/}
-          <div className="text-center">
+          <div className="text-center text-[#D9D9D9]">
             <p>We are a team of five Developers working in a different domains. The domains shown below represent only each member's specificity</p>
           </div>
         </div>

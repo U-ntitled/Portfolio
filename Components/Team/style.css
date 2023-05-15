@@ -91,3 +91,8 @@
         margin-right: 0;
     }
 }
+@media screen and (max-height:1000px){
+    .general-content{
+        height: 120vh;
+    }
+}
