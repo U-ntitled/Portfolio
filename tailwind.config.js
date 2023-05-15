@@ -27,6 +27,7 @@ module.exports = {
          'xlg':'1400px',
         // => @media (min-width: 843px) { ... }
         'tg': '800px',
+        'xxs': '369px'
       }
       
     },
