@@ -8,35 +8,35 @@ function Team() {
       fullName: 'RAKOTONANDRASANA Jean Pierre',
       domain:'Fullstack Developper',
       contacts: ['','',''],
-      classes:'upLeft bg-[#F0F0F0] flex flex-col m-6 rounded-xl items-center justify-evenly'
+      classes:'upLeft'
     },
     {
       avatarUrl: '',
       fullName: 'RAKOTONANDRASANA Jean Pierre',
       domain:'Fullstack Developper',
       contacts: ['','',''],
-      classes:'center bg-[#F0F0F0] flex flex-col m-6 rounded-xl items-center justify-evenly'
+      classes:'center'
     },
     {
       avatarUrl: '',
       fullName: 'RAKOTONANDRASANA Jean Pierre',
       domain:'Fullstack Developper',
       contacts: ['','',''],
-      classes:'upRight bg-[#F0F0F0] flex flex-col m-6 rounded-xl items-center justify-evenly'
+      classes:'upRight'
     },
     {
       avatarUrl: '',
       fullName: 'RAKOTONANDRASANA Jean Pierre',
       domain:'Fullstack Developper',
       contacts: ['','',''],
-      classes:'bLeft bg-[#F0F0F0] flex flex-col m-6 rounded-xl items-center justify-evenly'
+      classes:'bLeft'
     },
     {
       avatarUrl: '',
       fullName: 'RAKOTONANDRASANA Jean Pierre',
       domain:'Fullstack Developper',
       contacts: ['','',''],
-      classes:'bRight bg-[#F0F0F0] flex flex-col m-6 rounded-xl items-center justify-evenly'
+      classes:'bRight'
     }
   ]
   return (
