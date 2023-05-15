@@ -69,7 +69,7 @@
     -o-border-radius: 30px;
 }
 
-/* input[type=text] {
+.input_text {
     font-size: 1em;
     color: white;
     width: 100%;
@@ -83,9 +83,9 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: #0A0E26;
-} */
+}
 
-/* textarea {
+.area {
     font-size: 1em;
     color: white;
     width: 100%;
@@ -99,7 +99,7 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     background-color: #0A0E26;
-} */
+}
 
 .purple_button2 button {
     width: 100%;
@@ -171,15 +171,15 @@
         display: none;
     }
 
-    /* input[type=text] {
+    .input_text {
         font-size: 0.7em;
         width: 97%;
     }
 
-    textarea {
+    .area {
         font-size: 0.7em;
         width: 97%;
-    } */
+    }
 
     .form_title {
         font-size: 1.2em;
