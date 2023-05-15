@@ -16,10 +16,16 @@ module.exports = {
            Exo2:['Exo2']
       },
       backgroundColor:{
-           bgprimary:'#2c1654',
-           btnprimary:'#ff6464'
-      }
+           bgprimary:'#0A0E26',
+           btnprimary:'#B73BF0'
+      },
 
+    
+      screens: {
+        'lg': '843px',
+        // => @media (min-width: 843px) { ... }
+      }
+      
     },
   },
   plugins: [],

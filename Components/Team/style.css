@@ -1,0 +1,25 @@
+.members-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        'upLeft center upRight'
+        'bLeft center bRight';
+}
+.upLeft{
+    grid-area: upLeft;
+}
+.center{
+    grid-area: center;
+    height: 45.5%;
+    align-self: center;
+}
+.upRight{
+    grid-area: upRight;
+}
+.bLeft{
+    grid-area: bLeft;    
+}
+.bRight{
+    grid-area: bRight;
+}

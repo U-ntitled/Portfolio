@@ -5,8 +5,8 @@ function Hero() {
   return (
     <div className='w-full h-[100vh] bg-bgprimary  font-Exo2'>
            <nav className='flex items-center  h-[8vh]  font-semibold mx-2 md:mx-16 text-white overflow-hidden'>
-                <div className='w-[50%] lg:flex-1'>
-                     <h2 className='h2'>UNTITLED</h2>
+                <div className='w-[50%] lg:flex-1 p-2'>
+                     <img  src='LOGO.svg' alt='our logo' style={{width:220, height:100}}/>
                 </div>
                 <ul className='hidden md:flex-1  text-[16px] gap-3 md:flex  md:text-[18px] lg:gap-7 lg:text-[20px]' >
                     <li>
