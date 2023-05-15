@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 840px){
     .general-content{
-        height: 130vh;
+        height: 160vh;
     }
     .titles{
         height: 20%;
@@ -101,8 +101,13 @@
         margin-right: 0;
     }
 }
-@media screen and (max-height:900px){
+@media screen and (max-height:900px) and (min-width:841px){
     .general-content{
-        min-height: 120vh;
+        height: 120vh;
+    }
+}
+@media screen and (max-height:700px) and (min-width:841px){
+    .general-content{
+        height: 140vh;
     }
 }
