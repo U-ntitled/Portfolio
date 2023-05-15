@@ -5,7 +5,7 @@ import './style.module.css'
 function About() {
   return (
     <div className='bg-[#171135] flex flex-row justify-around h-[100vh]'>
-      <div className='w-[36%] mt-[10%] text-[#D9D9D9]'>
+      <div className='w-[36%] mt-[10%] text-[#D9D9D9] pl-[5vw]'>
         <h1 className='uppercase font-bold text-3xl '>
           WHO ARE US ?
         </h1>
