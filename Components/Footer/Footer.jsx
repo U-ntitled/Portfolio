@@ -29,7 +29,7 @@ function Footer() {
             <a className='opacity-70' href='#project'>Mobile Development</a>
           </div>
           <div className="flex flex-col space-y-4 md:w-[40%] w-[100%]">
-              <h2 className='text-4xl font-bold'>LET’ S MAKE YOUR <span className='text-[#37BB8A]'>VISION</span> INTO <span className='text-[#37BB8A]'>REALITY</span></h2>
+              <h2 className='h2 font-bold leading-tight'>LET’ S MAKE YOUR <span className='text-[#37BB8A]'>VISION</span> INTO <span className='text-[#37BB8A]'>REALITY</span></h2>
               <button className='bg-[#C525EA] flex justify-center items-center text-[#fff] py-2 w-[90%] btn '>SHARE US YOUR PROJECT</button>
           </div>
         </div>
