@@ -1,17 +1,29 @@
+'use client'
 import React from 'react'
 import './style.module.css'
+import {motion,easeInOut} from 'framer-motion'
 
 function Footer() {
   return (
     <div className='bg-[#171135] flex flex-col space-y-3 text-white'>
       <div className="flex justify-between items-center flex-wrap footer-title space-y-3 w-full">
-          <img src='LOGO.svg' alt='logo' className='footer-logo'/>
-        <div className="flex space-x-3 items-center">
+          <motion.img 
+          initial={{x: -100 ,opacity:0}}
+          transition={{duration: 0.5 ,easeInOut}}
+          whileInView={{x:0,opacity:1}}
+          viewport={false}
+          src='LOGO.svg' alt='logo' className='footer-logo'/>
+        <motion.div 
+          initial={{x: 100 ,opacity:0}}
+          transition={{duration: 0.5 ,easeInOut}}
+          whileInView={{x:0,opacity:1}}
+          viewport={false}
+        className="flex space-x-3 items-center">
            <img src='reso.png' alt='social media icon'/>
            <img src='reso.png' alt='social media icon'/>
            <img src='reso.png' alt='social media icon'/>
            <img src='reso.png' alt='social media icon'/>
-        </div>
+        </motion.div>
       </div>
       <div className="flex justify-center items-center w-full ">
         <div className="flex justify-between items-start w-[85%] flex-wrap footer space-y-3 tg:space-y-0">

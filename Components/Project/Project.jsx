@@ -3,16 +3,24 @@ import Card from './Element/Card'
 
 const project = [{
   image: 'EniLab.png',
-  description: ''
+  description: '',
+  direction:true,
+  delay: 0.2
 },{
   image: 'SeraoClub.svg',
-  description: ''
+  description: '',
+  direction:false,
+  delay: 0.4
 },{
   image: 'portfolio.svg',
-  description: ''
+  description: '',
+  direction:true,
+  delay: 0.6
 },{
   image: 'Connekta.svg',
-  description: ''
+  description: '',
+  direction:false,
+  delay:  0.8
 }]
 function Project() {
   return (
@@ -22,7 +30,7 @@ function Project() {
       <div className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2 project-card">
           {
             project.map((elem,key)=>(
-              <Card key={key} capture={elem.image}/>
+              <Card key={key} capture={elem.image} direction={elem.direction} delay={elem.delay}/>
             ))
           }
       </div>
