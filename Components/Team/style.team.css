@@ -41,9 +41,12 @@
 .general-content{
     overflow-x: hidden;
 }
+.titles p{
+    color: #f2f2f2ab;
+}
 @media screen and (max-width: 985px){
     .general-content{
-        height: 130vh;
+        height: auto;
     }
     .titles{
         height: 18%;
@@ -69,16 +72,18 @@
     }
 }
 @media screen and (max-width: 633px){
-    .members-cards{
+    /* .members-cards{
         height: 75%;
-    }
+    } */
     .upLeft, .upRight, .bLeft, .bRight{
         width: 90%;
-        /* height: 80%; */
+        height: 97%;
         margin: 0;
+        padding-top: 0.4rem;
     }
     .center{
-        /* height: 80%; */
+        padding-top: 0.4rem;
+        height: 97%;
         width: 45%;
         margin-top: 0;
         margin-bottom: 0;
@@ -105,11 +110,17 @@
         justify-content: center;
         gap: 0.8rem;
     }   
+    .titles p{
+        margin-top: 0.8rem;
+    }
+    .titles h2{
+        line-height: 2rem;
+    }
     .contacts{
         margin-top: .5rem;
     }
     .upLeft, .upRight, .bLeft, .bRight, .center{
-        margin: .4rem;
+        margin: .8rem;
         width: 80%;
         padding-top: .8rem;
     } 
