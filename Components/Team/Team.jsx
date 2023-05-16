@@ -44,7 +44,7 @@ function Team() {
       <div className="h-full flex flex-col justify-between  items-center w-full space-y-14">
 
         {/* Texts section */}
-        <div className="h-[20%] flex flex-col justify-evenly titles">
+        <div className="h-[18%] flex flex-col justify-evenly titles">
           {/* Title of the Section */}
           <div className="text-center">
             <h2 className='h2 text-[2rem] text-[#D9D9D9]'>MEET THE MEMBERS OF OUR TEAM</h2>
@@ -57,7 +57,7 @@ function Team() {
         </div>
 
         {/* Cards section */}
-        <div className="h-[80%] members-cards">
+        <div className="h-[82%] members-cards">
           {
             members.map((elem,key)=>(
               <div key={key} className={elem.classes}>
