@@ -84,7 +84,7 @@ function Hero() {
                       />
                   </span>
            </div>
-           <div className=' w-[95%] h-[75vh]  flex justify-between   m-auto md:w-[80%] lg:w-[85%]'>
+           <div className=' w-[95%] h-[75vh]  flex justify-between   m-auto md:w-[80%] lg:w-[85%] mb-8'>
                  <div className=' flex-1 flex mt-20 justify-center z-10'>
                     <div className=' w-full  p-4 lg:w-[85%]'>
                         <motion.h1 
@@ -135,29 +135,70 @@ function Hero() {
                  <motion.div 
                           initial={{opacity:0, x:70}}
                           animate= {{ opacity:1 , x:0}}
-                          transition={{ duration:0.9 , delay:0.4}}  className=' hidden flex-1  lg:flex justify-center '>
+                          transition={{ duration:0.6 , delay:0.4}}  
+                          className=' hidden flex-1  lg:flex justify-center '>
                       <img src='hero.svg' className='w-[600px]'/>
                  </motion.div>
            </div>
-           <div className='  absolute bottom-0  w-full  md:w-[60%]  md:left-[20%]  '>
-                <div className=' flex justify-around   bg-white py-5 px-3'>
-                         <div className='flex flex-col items-center'>
-                              <span>
+           <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%]  '>
+                <div className=' flex justify-around   bg-white py-5 px-3  rounded-xl'>
+                         <motion.div 
+                               initial={{opacity:0, x:-70}}
+                               whileInView= {{ opacity:1 , x:0}}
+                               transition={{ duration:0.9 , delay:0.4}} 
+                            
+                              className='flex-1 flex flex-col items-center'>
+                              <span className='bg-[#37bb8b6e] p-3 rounded-xl'>
                                    <Image 
-                                       src='' 
-                                       alt=''
-                                       width={100}
-                                       height={100}
+                                       src='/experience1.png' 
+                                       alt='experience icon'
+                                       width={35}
+                                       height={35}
                                     />
                               </span>
-                              <h3 className='flex flex-col justify-center  text-[16px] items-center md:text-[32px] font-bold text-[#37BB8A] '>
+                              <h3 className='flex flex-col justify-center  text-[18px] items-center md:text-[32px] font-bold text-[#B73BF0] '>
                                   2+
-                                  <span className='text-[#0000009c] md:text-[18px]'>Year of experience</span>
+                                  <span className='text-[#0000009c] font-normal text-[14px] md:text-[24px]'>Year of experience</span>
                               </h3>
-                         </div>
-                         <div>2</div>
-                         <div>3</div>
-                         <div>4</div>
+                         </motion.div>
+                         <motion.div 
+                               initial={{opacity:0, x:-70}}
+                               whileInView= {{ opacity:1 , x:0}}
+                               transition={{ duration:0.6 , delay:0.4}} 
+                             
+                             className='flex-1 flex flex-col items-center'>
+                             <span className='bg-[#37bb8b6e] p-3 rounded-xl'>
+                                   <Image 
+                                   src='/project.png' 
+                                       alt='project icon'
+                                       width={35}
+                                       height={35}
+                              />
+                              </span>
+                              <h3 className='flex flex-col justify-center  text-[18px] items-center md:text-[32px] font-bold text-[#B73BF0] '>
+                                  15+
+                                  <span className='text-[#0000009c] font-normal text-[14px] md:text-[24px]'>Projects Done</span>
+                              </h3>
+                         </motion.div>
+                         <motion.div 
+                               initial={{opacity:0, x:-70}}
+                               whileInView= {{ opacity:1 , x:0}}
+                               transition={{ duration:0.6 , delay:0.4}} 
+                              className='flex-1 flex flex-col items-center'>
+                              <span className='bg-[#37bb8b6e] p-3 rounded-xl'>
+                                   <Image 
+                                       src='/trophy.png' 
+                                       alt='trophy icon'
+                                       width={35}
+                                       height={35}
+                              />
+                              </span>
+                              <h3 className='flex flex-col justify-center  text-[18px] items-center md:text-[32px] font-bold text-[#B73BF0] '>
+                                  2
+                                  <span className='text-[#0000009c] font-normal text-[14px] md:text-[24px]'>Awards</span>
+                              </h3>
+                         </motion.div>
+                        
                 </div>
                
            </div>
