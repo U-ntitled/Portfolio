@@ -139,11 +139,27 @@ function Hero() {
                       <img src='hero.svg' className='w-[600px]'/>
                  </motion.div>
            </div>
-           <div className=''>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+           <div className='  absolute bottom-0  w-full  md:w-[60%]  md:left-[20%]  '>
+                <div className=' flex justify-around   bg-white py-5 px-3'>
+                         <div className='flex flex-col items-center'>
+                              <span>
+                                   <Image 
+                                       src='' 
+                                       alt=''
+                                       width={100}
+                                       height={100}
+                                    />
+                              </span>
+                              <h3 className='flex flex-col justify-center  text-[16px] items-center md:text-[32px] font-bold text-[#37BB8A] '>
+                                  2+
+                                  <span className='text-[#0000009c] md:text-[18px]'>Year of experience</span>
+                              </h3>
+                         </div>
+                         <div>2</div>
+                         <div>3</div>
+                         <div>4</div>
+                </div>
+               
            </div>
            
     </div>

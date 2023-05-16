@@ -1,11 +1,11 @@
 import React from 'react'
-// import './style.module.css'
+import './style.about.css'
 
 
 function About() {
   return (
-    <div className='bg-[#171135] flex flex-row justify-between items-center  space-section'>
-      <div className='w-[36%]  text-[#D9D9D9] pl-[5vw] space-y-4'>
+    <div className='bg-[#171135] flex flex-row justify-between items-center  space-section responsive-space font-Exo2'>
+      <div className='w-[36%]  text-[#D9D9D9] pl-[5vw] space-y-4 about-text'>
         <h2 className='uppercase font-bold h2 '>
           WHO ARE US ?
         </h2>
@@ -19,8 +19,8 @@ function About() {
           Check Our Services
         </button>
       </div>
-      <div className='w-[36%] '>
-        <div className='bg-[#FFFFFF] h-[35vh] w-[25vw] '>
+      <div className='w-[36%] md-none'>
+        <div className='bg-[#FFFFFF] h-[35vh] w-[25vw] md-none2'>
             
         </div>
       </div>

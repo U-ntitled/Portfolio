@@ -52,6 +52,24 @@ body{
     height: 356px;
   }
 }
+@media screen and (max-width: 369px) {
+  .project-cart{
+    width: 300px;
+    height: 356px;
+  }
+  .card-bottom{
+    height: 54px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .project-cart{
+    width: 260px;
+    height: 356px;
+  }
+  .card-bottom{
+    height: 54px;
+  }
+}
 
 p, a {
   font-size: 16px;

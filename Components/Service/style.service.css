@@ -1,0 +1,36 @@
+@media screen and (max-width: 985px) {
+    .responsive-space{
+        height: 200vh;
+
+    }
+
+    .rows-service{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        height: 75%;
+    }
+
+    .service-text{
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+
+    .img-rows{
+        width: 30%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:496px) {
+    .img-rows{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+.img-rows{
+    margin: 0 auto;
+}
