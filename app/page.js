@@ -11,7 +11,7 @@ import CopyRight from '@/Components/Footer/CopyRight'
 
 export default function Home() {
   return (
-    <>
+    <div className='overflow-hidden'>
       <header>
         <Hero/>
       </header>
@@ -39,6 +39,6 @@ export default function Home() {
           <CopyRight/>
         </footer>
       </main>
-    </>
+    </div>
   )
 }

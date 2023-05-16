@@ -91,7 +91,7 @@ function Hero() {
                           initial={{opacity:0, x:-70}}
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.9 , delay:0.4}} 
-                          className=' w-[15ch] text-[36px] md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize'>
+                          className=' w-[15ch] text-[36px]  sm md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize'>
                               We build <span className='bg-btnprimary'>innovative</span> Software Solutions
                         </motion.h1>
                       <div>
