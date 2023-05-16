@@ -20,7 +20,7 @@ function Team() {
     {
       avatarUrl: '',
       fullName: 'RAKOTONDRANAIVO Gilbert Joyaux Wendi Anderson',
-      domain:'Fullstack Developper',
+      domain:'Django, VueJs, Laravel Developper',
       contacts: ['','',''],
       classes:'upRight'
     },
