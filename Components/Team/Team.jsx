@@ -5,36 +5,36 @@ function Team() {
   const members = [
     {
       avatarUrl: '',
-      fullName: 'RAKOTONANDRASANA Jean Pierre',
-      domain:'Fullstack Developper',
+      fullName: 'RAZAFIMAMY Antonino Iraky Ny Avo',
+      domain:'Backend Developper',
       contacts: ['','',''],
       classes:'upLeft'
     },
     {
       avatarUrl: '',
-      fullName: 'RAKOTONANDRASANA Jean Pierre',
-      domain:'Fullstack Developper',
+      fullName: 'ANDRIANIAINA Fanomezantsoa Nomena',
+      domain:'MERN Stack, Mobile Developper',
       contacts: ['','',''],
       classes:'center'
     },
     {
       avatarUrl: '',
-      fullName: 'RAKOTONANDRASANA Jean Pierre',
+      fullName: 'RAKOTONDRANAIVO Gilbert Joyaux Wendi Anderson',
       domain:'Fullstack Developper',
       contacts: ['','',''],
       classes:'upRight'
     },
     {
       avatarUrl: '',
-      fullName: 'RAKOTONANDRASANA Jean Pierre',
+      fullName: 'NOMENJANAHARY Riry',
       domain:'Fullstack Developper',
       contacts: ['','',''],
       classes:'bLeft'
     },
     {
       avatarUrl: '',
-      fullName: 'RAKOTONANDRASANA Jean Pierre',
-      domain:'Fullstack Developper',
+      fullName: 'VONIARIMALALA Fiaro Miangaly',
+      domain:'Junior Data Scientist',
       contacts: ['','',''],
       classes:'bRight'
     }
@@ -62,28 +62,28 @@ function Team() {
             members.map((elem,key)=>(
               <div key={key} className={elem.classes}>
                 {/* Avatar */}
-                <div className="avatar w-[8rem] h-[8rem] rounded-full bg-gray-600">
+                <div className="avatar w-[8.5rem] h-[8.5rem] rounded-full bg-gray-600">
 
                 </div>
 
                 {/* Abouts */}
                   {/* Name */}
-                  <div className="text-center flex justify-center max-w-[80%]">
+                  <div className="text-center flex justify-center max-w-[75%] fnames-container">
                     <h2 className='text-[#0A0E26] font-bold fnames'>{elem.fullName}</h2>
                   </div>
                   {/* Funtion */}
-                  <div className="">
+                  <div className="max-w-[75%] text-center domain-container">
                     <p className='text-[#BA38F2] font-bold domain'>{elem.domain}</p>
                   </div>
                 {/* Contants Link */}
                 <div className="flex flex-row w-full justify-center space-x-6 contacts">
-                  <div className="icons w-[3rem] h-[3rem] bg-slate-500 rounded-full">
+                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
 
                   </div>
-                  <div className="icons w-[3rem] h-[3rem] bg-slate-500 rounded-full">
+                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
 
                   </div>
-                  <div className="icons w-[3rem] h-[3rem] bg-slate-500 rounded-full">
+                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
 
                   </div>
                 </div>

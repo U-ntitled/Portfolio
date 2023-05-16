@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    margin-left: 17rem;
+    margin-right: 17rem;
     grid-template-areas: 
         'upLeft center upRight'
         'bLeft center bRight';
@@ -10,8 +12,8 @@
     background: #f0f0f0;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem;
-    padding-bottom: .7rem;
+    margin: 1rem;
+    padding: .6rem .2rem 1rem .2rem;
     border-radius: .75rem;
     -webkit-border-radius: .75rem;
     -moz-border-radius: .75rem;
@@ -19,14 +21,15 @@
     -o-border-radius: .75rem;
     align-items: center;
     justify-content: space-evenly;
-    height: 90%;
+    gap: .5rem;
+    height: 96%;
 }
 .upLeft{
     grid-area: upLeft;
 }
 .center{
     grid-area: center;
-    height: 45.5%;
+    height: 48%;
     align-self: center;
 }
 .upRight{
@@ -44,6 +47,26 @@
 .titles p{
     color: #f2f2f2ab;
 }
+
+@media screen and (max-width: 1620px) {
+    .members-cards{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .members-cards{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+@media screen and (max-width: 1076px) {
+    .members-cards{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 985px){
     .general-content{
         height: auto;
@@ -61,6 +84,9 @@
             'upLeft upRight'
             'center center'
             'bLeft bRight';
+    }
+    .fnames-container,.domain-container{
+        max-width: 60%;
     }
     .upLeft, .upRight, .bLeft, .bRight{
         height: 92%;
