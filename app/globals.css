@@ -11,7 +11,7 @@
         @apply font-Exo2 text-[4rem] uppercase
     }
     .h2{
-        @apply font-Exo2 text-[2rem]  uppercase font-bold
+        @apply font-Exo2 text-[2.5rem]  uppercase font-bold
     }
     .h3{
         @apply font-Exo2 text-[24px] uppercase
@@ -19,6 +19,7 @@
 }
 body{
   font-family: 'Exo2';
+  scroll-behavior: smooth;
 }
 
 @keyframes linear {
@@ -71,9 +72,9 @@ body{
   }
 }
 
-p, a {
+/* p, a {
   font-size: 16px;
-}
+} */
 .space-section{
  padding: 4% 10%;
 }

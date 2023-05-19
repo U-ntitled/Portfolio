@@ -1,4 +1,5 @@
 #contact_section {
+    font-family: 'Exo2';
     background-color: #171135;
     display: flex;
     flex-direction: row;
@@ -14,6 +15,7 @@
 }
 
 .text_section {
+    font-family: 'Exo2';
     width: 40%;
     color: white;
 }
@@ -29,8 +31,9 @@
 .purple_button a {
     text-decoration: none;
     color: white;
-    padding: 10px;
+    padding: 15px 10px;
     background-color: #BA38F2;
+    font-family: 'Exo2';
 }
 
 /* Second under-section */

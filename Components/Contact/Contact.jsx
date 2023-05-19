@@ -3,7 +3,8 @@ import styles from './style.module.css'
 
 function Contact() {
   return (
-    <div id={`${styles.contact_form_section}`} className="space-section">
+    <div id={`${styles.contact_form_section}`} className="space-section font-Exo2 snap-center">
+        
         <form className={styles.contact_form} method="post">
             <h2 className={`${styles.form_title} h2`}>CONTACT US</h2>
             
@@ -22,7 +23,7 @@ function Contact() {
             className={styles.area}></textarea>
             
             <p className={styles.purple_button2}>
-                <button type="submit">SEND MESSAGE</button>
+                <button type="submit" className='rounded-md'>SEND MESSAGE</button>
             </p>
         </form>
 

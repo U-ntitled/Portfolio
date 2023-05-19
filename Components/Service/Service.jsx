@@ -3,7 +3,8 @@ import './style.service.css'
 
 function Service() {
   return (
-    <div className='bg-[#0A0E26] h-[100vh] text-[#D9D9D9] py-[15vh] space-section responsive-space'>
+    <div className='bg-[#0A0E26] h-[100vh] text-[#D9D9D9] py-[15vh] space-section responsive-space snap-center'>
+      <span id='service'/>
       <h1 className='font-semibold text-[2rem] text-center font-Exo2'>OUR SERVICES</h1>
       <p className='text-center text-[15px] service-text font-Exo2'>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi enim voluptatibus labore ullam repellat aliquid! <br />

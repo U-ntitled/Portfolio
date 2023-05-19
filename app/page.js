@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Hero from '../Components/Hero/Hero'
-import About from '../Components/About/About'
+import NewAbout from '../Components/NewABout/NewAbout'
 import Service from '../Components/Service/Service'
 import Project from '../Components/Project/Project'
 import Team from '../Components/Team/Team'
@@ -11,13 +11,13 @@ import CopyRight from '@/Components/Footer/CopyRight'
 
 export default function Home() {
   return (
-    <div className='overflow-hidden'>
+    <div className='overflow-hidden scroll-smooth'>
       <header>
         <Hero/>
       </header>
       <main>
         <section>
-          <About/>
+          <NewAbout/>
         </section>
         <section>
           <Service/>

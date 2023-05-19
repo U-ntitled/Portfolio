@@ -13,11 +13,11 @@ function Transition() {
             </p>
 
             <div className={styles.purple_button}>
-                <a href="#">GET IN TOUCH WITH US</a>
+                <a href="#" className=' rounded-md'>GET IN TOUCH WITH US</a>
             </div>
         </div>
 
-
+        <span id='contact'/>
         <div className={styles.image_representation}>
             <img src="Saly-31 1.svg" alt="Communication illustration"/>
         </div>

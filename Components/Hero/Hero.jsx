@@ -7,6 +7,7 @@ import Image from 'next/image';
 function Hero() {
   return (
     <div className='w-full h-[100vh] bg-bgprimary  font-Exo2'>
+           <span id='hero'/>
            <nav className='flex items-center  h-[8vh]  font-semibold mx-2 md:mx-16 text-white overflow-hidden'>
                 <motion.div  
                     initial={{opacity:0, x:-50}}
@@ -54,7 +55,7 @@ function Hero() {
                          transition={{ duration:0.4 , delay:0.05 }}
 
                     >
-                      <a href='project'>Our Projects</a>
+                      <a href='#project'>Our Projects</a>
                     </motion.li>
                 </motion.ul>
                 <motion.div  
@@ -63,7 +64,7 @@ function Hero() {
                     transition={{ duration:0.9 }}
 
                     className='hidden  lg:block md:flex-[1/2]'>
-                    <a href='#contact' className='inline-block py-3 px-5 text-[20px] font-semibold  bg-btnprimary mt-2  cursor-pointer'>CONTACT US</a>
+                    <a href='#contact' className='inline-block py-3 px-5 text-[20px] font-semibold  rounded-md   bg-btnprimary mt-2  cursor-pointer'>CONTACT US</a>
                 </motion.div>
            </nav>
            <div>
@@ -75,11 +76,11 @@ function Hero() {
                            alt='graphique element' 
                       />
                   </span>
-                  <span className='absolute bottom-2 right-2'>
+                  <span className='absolute bottom-2 right-2 -z-2'>
                   <Image 
                            src='blendToUp.svg' 
-                           width={350}
-                           height={300}
+                           width={300}
+                           height={250}
                            alt='graphique element' 
                       />
                   </span>
@@ -123,11 +124,33 @@ function Hero() {
                         </motion.h3>
                       </a> 
                      
-                      <div className='py-10'>
-                            <ul className='flex  '>
-                                 <li><a className='p-3  bg-slate-500 rounded-full '>Gi</a></li>
-                                 <li><a className='p-3 ml-2 bg-slate-500 rounded-full '>Ln</a></li>
-                                 <li><a className='p-3 ml-2 bg-slate-500 rounded-full '>Tn</a></li>
+                      <div className=' mb-5 pt-10'>
+                            <ul className='flex items-center '>
+                                  <a className='rounded-full   cursor-pointer'>
+                                       <Image
+                                          src='/github.svg'
+                                          width={60}
+                                          height={60}
+                                          alt='github icon '
+                                       />
+                                  </a>
+                                
+                                  <a className='rounded-full   cursor-pointer'>
+                                       <Image
+                                          src='/linkedin.svg'
+                                          width={60}
+                                          height={60}
+                                          alt='github icon '
+                                       />
+                                  </a>
+                                  <a className='rounded-full   cursor-pointer'>
+                                       <Image
+                                          src='/twitter.svg'
+                                          width={60}
+                                          height={60}
+                                          alt='github icon '
+                                       />
+                                  </a>
                             </ul>
                       </div>
                     </div>
@@ -136,11 +159,11 @@ function Hero() {
                           initial={{opacity:0, x:70}}
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.6 , delay:0.4}}  
-                          className=' hidden flex-1  lg:flex justify-center '>
-                      <img src='hero.svg' className='w-[600px]'/>
+                          className=' hidden flex-1  lg:flex justify-center z-1'>
+                      <img src='hero.svg' className='w-[600px] z-10'/>
                  </motion.div>
            </div>
-           <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%]  '>
+           <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%] z-30  '>
                 <div className=' flex justify-around   bg-white py-5 px-3  rounded-xl'>
                          <motion.div 
                                initial={{opacity:0, x:-70}}
