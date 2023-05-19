@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Hero from '../Components/Hero/Hero'
-import NewAbout from '../Components/NewABout/NewAbout'
+import About from '../Components/ABout/About'
 import Service from '../Components/Service/Service'
 import Project from '../Components/Project/Project'
 import Team from '../Components/Team/Team'
@@ -17,7 +17,7 @@ export default function Home() {
       </header>
       <main>
         <section>
-          <NewAbout/>
+          <About/>
         </section>
         <section>
           <Service/>

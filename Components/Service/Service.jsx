@@ -12,8 +12,8 @@ function Service() {
       </p>
       <div className="flex flex-row justify-around mt-[12vh] rows-service font-Exo2">
         <div className='ml-[2em] text-center justify-around'>
-          <div className='w-[50%] h-[17vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
-            .
+          <div className='w-[50%] h-[23vh] pt-[2.7vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
+            <img src="web-design 1.svg" alt="" className='my-[0] mx-auto' />
           </div>
           <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
               UI/UX DESIGN
@@ -26,11 +26,11 @@ function Service() {
         </div>
 
         <div className='ml-[2em] text-center justify-around'>
-          <div className='w-[50%] h-[17vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
-            .
+          <div className='w-[50%] h-[23vh] pt-[2.7vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
+            <img src="web-design 1.svg" alt="" className='my-[0] mx-auto' />
           </div>
           <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
-              UI/UX DESIGN
+              Web Developpement
           </h3>
           <p className='text-center text-[15px] service-text'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident. <br />
@@ -40,11 +40,11 @@ function Service() {
         </div>
 
         <div className='ml-[2em] text-center justify-around'>
-          <div className='w-[50%] h-[17vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
-            .
+          <div className='w-[50%] h-[23vh] pt-[2.7vh] rounded-2xl text-center bg-[#c525ea1a] img-rows'>
+            <img src="web-design 1.svg" alt="" className='my-[0] mx-auto' />
           </div>
           <h3 className=' font-bold text-center text-[#41B192] my-[1.5vh]'>
-              UI/UX DESIGN
+              Mobile Developpement
           </h3>
           <p className='text-center text-[15px] service-text'>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, provident. <br />
