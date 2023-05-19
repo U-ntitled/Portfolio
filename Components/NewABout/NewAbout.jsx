@@ -20,7 +20,7 @@ function NewAbout() {
                     <h3 className='text-[1.2rem]  uppercase mb-6 text-[#3da780]'>
                         We are a <span className=''>team</span> of software engineer student, 
                     </h3>
-                    <div className='mb-6'>
+                    <div className='mb-8'>
                         <div className='w-[28px] h-1 bg-btnprimary mb-3 '/>
                         <p className='w-full md:w-[60ch] text-[#f2f2f2d5]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis iste voluptatibus quis tenetur deserunt, eveniet sunt ab quo assumenda doloremque 
                             laborum quae corrupti ipsam reprehenderit mollitia iure delectus commodi debitis.
@@ -30,7 +30,7 @@ function NewAbout() {
                  
                         <a 
                              href='#contact' 
-                             className='inline py-2 px-5 text-[18px]  text-[#B73BF0] font-light  rounded-md border  border-[#B73BF0] mt-2  cursor-pointer btn'>  
+                             className='inline py-2 px-5 text-[18px]  text-[#B73BF0] font-light  rounded-md border  border-[#B73BF0] mt-2 hover:text-[#f2f2f2] hover:bg-[#b73bf0]   ease-in-out transition-all  cursor-pointer btn'>  
                              MORE ABOUT US
                         </a>
                  
