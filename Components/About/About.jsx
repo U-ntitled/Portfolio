@@ -1,11 +1,10 @@
 import React from 'react'
 import './style.about.css'
 
-
 function About() {
   return (
-    <div className='bg-[#171135] flex flex-row justify-between items-center  space-section responsive-space font-Exo2'>
-      <div className='w-[36%]  text-[#D9D9D9] pl-[5vw] space-y-4 about-text'>
+    <div className='bg-[#171135] flex flex-row justify-between items-center h-[60%] responsive-space font-Exo2 pt-[30vh] pb-[20vh] px-[12vh] '>
+      <div className='w-[40%]  text-[#D9D9D9] pl-[5vw] space-y-4 about-text'>
         <h2 className='uppercase font-bold h2 '>
           WHO ARE US ?
         </h2>
