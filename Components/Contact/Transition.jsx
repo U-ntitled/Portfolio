@@ -6,7 +6,7 @@ function Transition() {
     <div id={`${styles.contact_section}`} className="space-section">
         <div className={styles.text_section}>
             <div className={styles.title_text}>
-                <h2 className="h2">LET'S CREATE <span className={`${styles.green}`}>SOMETHING AMAZING</span> TOGETHER</h2>
+                <h2 className={`${styles.h2_low} h2`}>LET'S CREATE <span className={`${styles.green}`}>SOMETHING AMAZING</span> TOGETHER</h2>
             </div>
             <p className={styles.text}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam eveniet nobis perspiciatis ab ipsa. 

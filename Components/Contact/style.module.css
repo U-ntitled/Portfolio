@@ -152,13 +152,14 @@
     }
 
     .image_representation img{
-        width: 30%;
+        /* width: 30%; */
+        display: none;
     }
 
 
 
     .contact_form {
-        margin: 7%;
+        margin: 0;
         width: 100%;
     }
 
@@ -187,6 +188,10 @@
 
     .form_title {
         font-size: 1.2em;
+    }
+
+    .h2_low {
+        font-size: 2em;
     }
 }
 
