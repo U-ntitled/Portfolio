@@ -14,3 +14,10 @@
 .animate {
      animation: leftToRight 1.5s linear infinite ;
 }
+
+@media screen and ( 1080px <= width >= 15000px ) {
+      .specialScreen{
+          font-size: 14px ;
+      }
+  
+}

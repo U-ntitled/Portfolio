@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import  styles  from './style.module.css'
 import { library } from '@fortawesome/fontawesome-svg-core';
+
 import {
   faGithubAlt,
   faGoogle,
@@ -23,7 +24,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Hero() {
   return (
-    <div className='w-full min-h-screen bg-bgprimary  font-Exo2'>
+    <div className={`${styles.SpecialScreen} w-full min-h-screen bg-bgprimary font-Exo2`}>
            <span id='hero'/>
            <nav className='flex items-center  h-[8vh]  font-semibold mx-2 md:mx-16 text-white overflow-hidden'>
                 <motion.div  
@@ -41,7 +42,7 @@ function Hero() {
                      />
                 </motion.div>
                 <motion.ul 
-                    className='hidden text-[16px]  md:flex-1 gap-3 md:flex  md:text-[18px] lg:gap-7 lg:text-[20px]' >
+                    className='hidden text-[1rem]  md:flex-1 gap-3 md:flex  md:text-[1.2] lg:gap-7 lg:text-[1.3rem]' >
                     <motion.li 
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
