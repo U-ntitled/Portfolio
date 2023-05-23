@@ -78,6 +78,14 @@ function NavBar() {
                     >
                       <a href='#team'>Our Teams</a>
                     </motion.li>
+                    <motion.li 
+                         initial={{opacity:0 , scale:0}}
+                         animate= {{ opacity:1 , scale:1}}
+                         transition={{ duration:0.4 , delay:0.05 }}
+                         className='relative hidden'
+                    >
+                      <a href='#footer'>footer</a>
+                    </motion.li>
                 </motion.ul>
                 <motion.div  
                     initial={{opacity:0, x:50}}
