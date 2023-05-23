@@ -15,9 +15,15 @@
      animation: leftToRight 1.5s linear infinite ;
 }
 
-@media screen and ( 1080px <= width >= 15000px ) {
-      .specialScreen{
-          font-size: 14px ;
+@media only screen and (max-width: 1500px) {
+      .text{
+          font-size: 12px;
+      }
+      .title{
+          font-size: 46px;  
+      }
+      .image {
+           width: 450px;
       }
   
 }
