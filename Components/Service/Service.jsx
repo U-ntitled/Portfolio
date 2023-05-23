@@ -4,7 +4,8 @@ import Image from 'next/image'
 
 function Service() {
   return (
-    <div className=" bg-bgprimary font-Exo2  space-section">
+    <div className=" bg-bgprimary font-Exo2  space-section snap-center">
+      <span id='service'></span>
       <div className="flex flex-col justify-center items-center mb-4">
           <h2 className='h2 font-bold text-[#f2f2f2]'>OUR <span className='text-[#B73BF0]'>SERVICE</span></h2>
          
