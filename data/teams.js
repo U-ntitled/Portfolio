@@ -1,6 +1,6 @@
 export const teams = [
     {
-      avatarUrl: '',
+      avatarUrl: '/Nino.webp',
       fullName: 'RAZAFIMAMY Antonino Iraky Ny Avo',
       domain:'Backend Developper',
       contacts: ['','',''],
@@ -8,7 +8,7 @@ export const teams = [
       direction: true
     },
     {
-      avatarUrl: '',
+      avatarUrl: '/Nomena.jpg',
       fullName: 'ANDRIANIAINA Fanomezantsoa Nomena',
       domain:'MERN Stack, Mobile Developper',
       contacts: ['','',''],
@@ -17,7 +17,7 @@ export const teams = [
 
     },
     {
-      avatarUrl: '',
+      avatarUrl: '/Wendi.jpg',
       fullName: 'RAKOTONDRANAIVO Gilbert Joyaux Wendi Anderson',
       domain:'Django, VueJs, Laravel Developper',
       contacts: ['','',''],
@@ -25,7 +25,7 @@ export const teams = [
       direction:true
     },
     {
-      avatarUrl: '',
+      avatarUrl: '/Riry.jpg',
       fullName: 'NOMENJANAHARY Riry',
       domain:'Fullstack Developper',
       contacts: ['','',''],
@@ -33,7 +33,7 @@ export const teams = [
       direction:false
     },
     {
-      avatarUrl: '',
+      avatarUrl: '/FIaro.jpg',
       fullName: 'VONIARIMALALA Fiaro Miangaly',
       domain:'Junior Data Scientist',
       contacts: ['','',''],

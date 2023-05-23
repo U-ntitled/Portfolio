@@ -4,11 +4,9 @@ import './style.team.css'
 import {motion} from 'framer-motion'
 import {teams as members} from '../../data/teams'
 import { library } from '@fortawesome/fontawesome-svg-core';
+import Image from 'next/image'
 
 import {
-  faGithubAlt,
-  faGoogle,
-  faFacebook,
   faTwitter,
   faGithub,
   faFacebookF,
@@ -52,8 +50,8 @@ function Team() {
               whileInView={{x:0,opacity:1}}
               key={key} className={elem.classes}>
                 {/* Avatar */}
-                <div className="avatar w-[8.5rem] h-[8.5rem] rounded-full bg-gray-600">
-
+                <div className="avatar w-[8.5rem] h-[8.5rem] rounded-ful flex justify-center c">
+                    <Image src={elem.avatarUrl} alt='Avatar' width={200} height={100} className='rounded-full' />
                 </div>
 
                 {/* Abouts */}

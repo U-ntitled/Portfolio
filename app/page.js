@@ -1,4 +1,4 @@
-import Image from 'next/image'
+'use client'
 import Hero from '../Components/Hero/Hero'
 import About from '../Components/NewABout/NewAbout'
 import Service from '../Components/Service/Service'
@@ -8,37 +8,98 @@ import Transition from '../Components/Contact/Transition'
 import Contact from '../Components/Contact/Contact'
 import Footer from '../Components/Footer/Footer'
 import CopyRight from '@/Components/Footer/CopyRight'
+import { useEffect, useRef, useState } from 'react'
 
 export default function Home() {
+  let spies = []
+  const ref = useRef(null)
+  const [valueOfScroll, setValueOfScroll] = useState(true)
+  const ratio = .6
+  let observer = null
+  const active = (elem)=>{
+    const id = elem.getAttribute('id')
+    console.log(id,1000000)
+    const anchor = document.querySelector(`a[href="#${id}"]`)
+    console.log(anchor,6666666)
+    console.log(anchor)
+    if(anchor === null){
+      return
+    }
+    anchor.parentElement.parentElement
+    .querySelectorAll('.active')
+    .forEach(node=>{
+      node.childNodes.classList.remove('active')
+    })
+    
+    anchor.classList.add('active')
+  }
+  
+  const callback = (entries,observer)=>{
+     entries.forEach(entry=>{
+       if(entry.intersectionRatio > 0){
+        active(entry.target)
+        console.log(entry.target,989898989)
+       }
+     })
+  }
+  const observe = (elems)=>{
+    if(observer !== null){
+      elems.forEach(elem=> observer.unobserve(elem))
+    }
+    const y = Math.round(window.innerHeight * ratio)
+    observer = new IntersectionObserver(callback,{
+      rootMargin: `-${window.innerHeight - y - 1}px 0px -${y}px 0px`
+    })
+    for(let i=0;i<elems.length;i++){
+      observer.observe(elems[i])
+    }
+  }
+
+  useEffect(()=>{
+    if(ref.current){
+      spies = Array.from(ref.current.querySelectorAll('[data-spy]'))
+      console.log(spies)
+    }
+    if(spies.length > 0){
+      observe(spies)
+      window.addEventListener('resize',()=>{
+        observe(spies)
+      })
+    }
+  },[valueOfScroll])
+  const HandleScroll = ()=>{
+    console.log(valueOfScroll)
+    setValueOfScroll(ancien=>!ancien)
+  }
   return (
-    <div className='overflow-hidden scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
-      <header>
+    <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
+      <header id='hero'>
         <Hero/>
       </header>
-      <main>
-        <section>
+      {/* <main> */}
+        <section id='about' data-spy>
           <About/>
         </section>
-        <section>
+        <section id='service' data-spy>
           <Service/>
         </section>
-        <section>
+        <section id='project' data-spy>
           <Project/>
         </section>
-        <section>
+        <section id='team' data-spy>
           <Team/>
         </section>
-        <section>
+        <section id='transition' data-spy>
           <Transition/>
         </section>
-        <section>
+        <section id='contact' data-spy>
           <Contact/>
         </section>
-        <footer>
+        <footer id='footer' data-spy>
           <Footer/>
           <CopyRight/>
         </footer>
-      </main>
+      {/* </main> */}
     </div>
   )
 }
