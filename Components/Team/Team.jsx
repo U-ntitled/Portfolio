@@ -86,7 +86,7 @@ function Team() {
                     </a>
                 </div>
                   <div className='inline-block  ml-5'>
-                    <a href='https://github.com/U-ntitled' target={'_blank'}>
+                    <a href={elem.contacts.github} target={'_blank'}>
                       <span className='  w-[35px] h-[35px] text-[24px] flex items-center justify-center rounded-full hover:bg-black p-[6px] hover:text-white bg-white text-black  cursor-pointer transition-all ease-in-out duration-300'>
                         <FontAwesomeIcon 
                         icon={faGithub}
