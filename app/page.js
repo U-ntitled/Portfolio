@@ -68,7 +68,7 @@ export default function Home() {
   }
   return (
     <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
-      <header id='hero'>
+      <header id='hero' data-spy>
         <Hero/>
       </header>
       {/* <main> */}
