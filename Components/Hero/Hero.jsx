@@ -3,6 +3,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import  styles  from './style.module.css'
 import { library } from '@fortawesome/fontawesome-svg-core';
+import NavBar from './NavBar';
 
 import {
   faGithubAlt,
@@ -22,70 +23,17 @@ library.add(
 )
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
+
 function Hero() {
+
+     
   return (
     <div className={`${styles.SpecialScreen} w-full min-h-screen bg-bgprimary font-Exo2`}>
            <span id='hero'/>
-           <nav className='flex items-center  h-[8vh]  font-semibold mx-2 md:mx-16 text-white overflow-hidden'>
-                <motion.div  
-                    initial={{opacity:0, x:-50}}
-                    animate= {{ opacity:1 , x:0}}
-                    transition={{ duration:0.9 }}
-                      className='w-[50%] lg:flex-1 p-2'
-                >
-                     {/* <img  src='LOGO.svg' alt='our logo' style={{width:220, height:100}}/> */}
-                     <Image 
-                         src='LOGO.svg'
-                         width={220}
-                         height={100}
-                         alt='Logo of untitled'
-                     />
-                </motion.div>
-                <motion.ul 
-                    className='hidden text-[1rem]  md:flex-1 gap-3 md:flex  md:text-[1.2] lg:gap-7 lg:text-[1.3rem]' >
-                    <motion.li 
-                         initial={{opacity:0 , scale:0}}
-                         animate= {{ opacity:1 , scale:1}}
-                         transition={{ duration:0.7 }}
-
-                    >
-                      <a href='#'>Home</a>
-                    </motion.li>
-                    <motion.li 
-                         initial={{opacity:0 , scale:0}}
-                         animate= {{ opacity:1 , scale:1}}
-                         transition={{ duration:0.6 , delay:0.1 }}
-
-                    >
-                      <a href='#about'>About Us</a>
-                    </motion.li>
-                    <motion.li 
-                         initial={{opacity:0 , scale:0}}
-                         animate= {{ opacity:1 , scale:1}}
-                         transition={{ duration:0.5 , delay:0.2 }}
-
-                    >
-                      <a href='#service'>Our services</a>
-                    </motion.li>
-                    <motion.li 
-                         initial={{opacity:0 , scale:0}}
-                         animate= {{ opacity:1 , scale:1}}
-                         transition={{ duration:0.4 , delay:0.05 }}
-
-                    >
-                      <a href='#project'>Our Projects</a>
-                    </motion.li>
-                </motion.ul>
-                <motion.div  
-                    initial={{opacity:0, x:50}}
-                    animate= {{ opacity:1 , x:0}}
-                    transition={{ duration:0.9 }}
-
-                    className='hidden  lg:block md:flex-[1/2]'>
-                    <a href='#contact' className='inline-block py-3 px-5 text-[20px] font-semibold  rounded-md   bg-btnprimary mt-2  cursor-pointer'>CONTACT US</a>
-                </motion.div>
-           </nav>
-           <div>
+            <NavBar/>
+           <div className=''>
                   <span className='absolute left-[40%] z-0'>
                       <Image 
                            src='blendToDown.svg' 
@@ -103,7 +51,7 @@ function Hero() {
                       />
                   </span>
            </div>
-           <div className=' w-[95%] h-[75vh]  flex justify-between   m-auto md:w-[80%] lg:w-[85%] mb-8'>
+           <div className=' w-[95%] h-[82vh]  flex justify-between pt-[8vh]  m-auto md:w-[80%] lg:w-[85%] mb-8'>
                  <div className=' flex-1 flex mt-20 justify-center z-10'>
                     <div className=' w-full  p-4 lg:w-[85%]'>
                         <motion.h1 
@@ -191,7 +139,7 @@ function Hero() {
                       <img src='hero.svg' className={`${styles.image} w-[600px] z-10`}/> 
                  </motion.div>
            </div>
-           <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%] z-30  '>
+           <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%] z-20  '>
                 <div className=' flex justify-around   bg-white py-5 px-3  rounded-xl'>
                          <motion.div 
                                initial={{opacity:0, x:-70}}
