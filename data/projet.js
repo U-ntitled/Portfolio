@@ -1,21 +1,21 @@
 export const projet = [{
   image: 'EniLab.png',
-  description: '',
+  description: 'EniLab ',
   direction:true,
   delay: 0.2
 },{
   image: 'SeraoClub.svg',
-  description: '',
+  description: 'Serao Club',
   direction:false,
   delay: 0.4
 },{
   image: 'portfolio.svg',
-  description: '',
+  description: 'Untitled web site',
   direction:true,
   delay: 0.6
 },{
   image: 'Connekta.svg',
-  description: '',
+  description: 'Connekta',
   direction:false,
   delay:  0.8
 }]
