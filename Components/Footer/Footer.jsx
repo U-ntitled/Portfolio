@@ -2,6 +2,27 @@
 import React from 'react'
 import './style.module.css'
 import {motion,easeInOut} from 'framer-motion'
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import {
+  faGithubAlt,
+  faGoogle,
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faFacebookF,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
+
+library.add(
+   faFacebookF,
+   faLinkedinIn,
+   faGithub,
+   faTwitter
+)
+
+import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Footer() {
   return (
@@ -19,10 +40,40 @@ function Footer() {
           whileInView={{x:0,opacity:1}}
           viewport={false}
         className="flex space-x-3 items-center">
-           <img src='reso.png' alt='social media icon'/>
-           <img src='reso.png' alt='social media icon'/>
-           <img src='reso.png' alt='social media icon'/>
-           <img src='reso.png' alt='social media icon'/>
+        <div className='inline-block'>
+            <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                  <FontAwesomeIcon 
+                     icon={faFacebookF}
+                     size='xl'
+                  />
+            </span>
+        </div>
+        <div className='inline-block ml-5'>
+            <span className='  w-[45px] h-[45px] flex items-center  justify-center rounded-full bg-white text-[#00acee]  p-[12px]  hover:bg-[#00acee] hover:text-white  cursor-pointer transition-all ease-in-out duration-300 '>
+                  <FontAwesomeIcon 
+                     icon={faTwitter}
+                     size="2x"
+                  />
+            </span>
+        </div>
+        <div className='inline-block ml-5'>
+          <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                <FontAwesomeIcon 
+                   icon={faLinkedinIn}
+                   size='xl'
+             
+                />
+          </span>
+        </div>
+        <div className='inline-block  ml-5'>
+          <span className='  w-[45px] h-[45px] text-[24px] flex items-center justify-center rounded-full bg-black p-[6px] text-white hover:bg-white hover:text-black  cursor-pointer transition-all ease-in-out duration-300 '>
+                <FontAwesomeIcon 
+                   icon={faGithub}
+                   size="2x"
+             
+                />
+          </span>
+        </div>
         </motion.div>
       </div>
       <div className="flex justify-center items-center w-full ">

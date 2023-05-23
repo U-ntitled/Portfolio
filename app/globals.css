@@ -82,6 +82,8 @@ body{
   font-size: 20px;
 }
 
-@media screen and (max-width: 345px) {
-  
+@media screen and (max-width: 400px) {
+  .space-section{
+     padding: 4% 3%;
+  }
 }
