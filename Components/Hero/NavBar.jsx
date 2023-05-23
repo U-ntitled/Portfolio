@@ -41,7 +41,7 @@ function NavBar() {
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
                          transition={{ duration:0.7 }}
-
+                         className='relative'
                     >
                       <a href='#'>Home</a>
                     </motion.li>
@@ -49,7 +49,7 @@ function NavBar() {
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
                          transition={{ duration:0.6 , delay:0.1 }}
-
+                         className='relative'
                     >
                       <a href='#about'>About Us</a>
                     </motion.li>
@@ -57,7 +57,7 @@ function NavBar() {
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
                          transition={{ duration:0.5 , delay:0.2 }}
-
+                         className='relative'
                     >
                       <a href='#service'>Our services</a>
                     </motion.li>
@@ -65,7 +65,7 @@ function NavBar() {
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
                          transition={{ duration:0.4 , delay:0.05 }}
-
+                         className='relative'
                     >
                       <a href='#project'>Our Projects</a>
                     </motion.li>
