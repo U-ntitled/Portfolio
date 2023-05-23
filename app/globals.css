@@ -16,10 +16,14 @@
     .h3{
         @apply font-Exo2 text-[24px] uppercase
     }  
+    html,body{
+      @apply scrollbar-thumb-yellow-400 scrollbar-track-red-600
+    }
 }
 html,body{
   font-family: 'Exo2';
   scroll-behavior: smooth;
+  
 }
 
 @keyframes linear {

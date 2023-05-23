@@ -1,27 +1,7 @@
 import React from 'react'
 import Card from './Element/Card'
+import {projet as project} from '../../data/projet'
 
-const project = [{
-  image: 'EniLab.png',
-  description: '',
-  direction:true,
-  delay: 0.2
-},{
-  image: 'SeraoClub.svg',
-  description: '',
-  direction:false,
-  delay: 0.4
-},{
-  image: 'portfolio.svg',
-  description: '',
-  direction:true,
-  delay: 0.6
-},{
-  image: 'Connekta.svg',
-  description: '',
-  direction:false,
-  delay:  0.8
-}]
 function Project() {
   return (
     <div className='bg-[#171135] flex flex-col  items-center text-white  gap-y-3 space-section font-Exo2'>
