@@ -17,7 +17,7 @@
         @apply font-Exo2 text-[24px] uppercase
     }  
 }
-body{
+html,body{
   font-family: 'Exo2';
   scroll-behavior: smooth;
 }
