@@ -67,30 +67,30 @@ export default function Home() {
     setValueOfScroll(ancien=>!ancien)
   }
   return (
-    <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
-      <header id='hero' data-spy>
+    <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  snap-mandatory scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
+      <header id='hero' className='snap-start' data-spy>
         <Hero/>
       </header>
       {/* <main> */}
-        <section id='about' data-spy>
+        <section id='about' data-spy className='snap-center'>
           <About/>
         </section>
-        <section id='service' data-spy>
+        <section id='service' data-spy className='snap-center'>
           <Service/>
         </section>
-        <section id='project' data-spy>
+        <section id='project' data-spy className='snap-center'>
           <Project/>
         </section>
-        <section id='team' data-spy>
+        <section id='team' data-spy className='snap-center'>
           <Team/>
         </section>
-        <section id='transition' data-spy>
+        <section id='transition' data-spy className='snap-center'>
           <Transition/>
         </section>
-        <section id='contact' data-spy>
+        <section id='contact' data-spy className='snap-center'>
           <Contact/>
         </section>
-        <footer id='footer' data-spy>
+        <footer id='footer' data-spy className='snap-center'>
           <Footer/>
           <CopyRight/>
         </footer>

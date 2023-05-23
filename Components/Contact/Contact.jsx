@@ -28,7 +28,7 @@ function Contact() {
         </form>
 
         <div className={styles.image_representation_2}>
-            <img src="Saly-21 1.svg" alt="Little universe to get in touch"/>
+            <img className={styles.rotate} src="Saly-21 1.svg" alt="Little universe to get in touch"/>
         </div>
     </div>
   )

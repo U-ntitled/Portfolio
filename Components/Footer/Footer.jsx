@@ -92,10 +92,10 @@ function Footer() {
             viewport={false}
           className="flex flex-col space-y-2  ">
             <h6 className='uppercase font-bold text-xl'>overview</h6>
-            <a className='a opacity-70' href='#about'>About us</a>
-            <a className='a opacity-70' href='#service'>Our services</a>
-            <a className='a opacity-70' href='#project'>Our projects</a>
-            <a className='a opacity-70' href='#team'>Our team</a>
+            <a className='a opacity-70 hover:text-[#B73BF0]' href='#about'>About us</a>
+            <a className='a opacity-70 hover:text-[#B73BF0]' href='#service'>Our services</a>
+            <a className='a opacity-70 hover:text-[#B73BF0]' href='#project'>Our projects</a>
+            <a className='a opacity-70 hover:text-[#B73BF0]' href='#team'>Our team</a>
           </motion.div>
           <motion.div 
             initial={{y: 100 ,opacity:0}}
@@ -104,9 +104,9 @@ function Footer() {
             viewport={false}
           className="flex flex-col space-y-2">
             <h6 className='uppercase font-bold text-xl'>Our Services</h6>
-            <a className='opacity-70' href='#about'>UI/UX Design</a>
-            <a className='opacity-70' href='#service'>Web Development</a>
-            <a className='opacity-70' href='#project'>Mobile Development</a>
+            <a className='opacity-70 hover:text-[#B73BF0]' href='#service'>UI/UX Design</a>
+            <a className='opacity-70 hover:text-[#B73BF0]' href='#service'>Web Development</a>
+            <a className='opacity-70 hover:text-[#B73BF0]' href='#service'>Mobile Development</a>
           </motion.div>
           <motion.div 
             initial={{x: 100 ,opacity:0}}
