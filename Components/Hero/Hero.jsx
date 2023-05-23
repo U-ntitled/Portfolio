@@ -2,11 +2,28 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import  styles  from './style.module.css'
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faGithubAlt,
+  faGoogle,
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faFacebookF,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
 
+library.add(
+   faFacebookF,
+   faLinkedinIn,
+   faGithub,
+   faTwitter
+)
 import Image from 'next/image';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Hero() {
   return (
-    <div className='w-full h-[100vh] bg-bgprimary  font-Exo2'>
+    <div className='w-full min-h-screen bg-bgprimary  font-Exo2'>
            <span id='hero'/>
            <nav className='flex items-center  h-[8vh]  font-semibold mx-2 md:mx-16 text-white overflow-hidden'>
                 <motion.div  
@@ -111,7 +128,7 @@ function Hero() {
                          
 
                       </div>
-                      <a href='#contact'>
+                      <a href='#contact' className=' inline-block mb-5 '>
                        <motion.h3 
                           initial={{opacity:0, x:-70}}
                           animate= {{ opacity:1 , x:0}}
@@ -124,34 +141,44 @@ function Hero() {
                         </motion.h3>
                       </a> 
                      
-                      <div className=' mb-5 pt-10'>
-                            <ul className='flex items-center '>
-                                  <a className='rounded-full   cursor-pointer'>
-                                       <Image
-                                          src='/github.svg'
-                                          width={60}
-                                          height={60}
-                                          alt='github icon '
-                                       />
-                                  </a>
-                                
-                                  <a className='rounded-full   cursor-pointer'>
-                                       <Image
-                                          src='/linkedin.svg'
-                                          width={60}
-                                          height={60}
-                                          alt='github icon '
-                                       />
-                                  </a>
-                                  <a className='rounded-full   cursor-pointer'>
-                                       <Image
-                                          src='/twitter.svg'
-                                          width={60}
-                                          height={60}
-                                          alt='github icon '
-                                       />
-                                  </a>
-                            </ul>
+                  
+                      <div className='icons-wrapper flex justify-start mt-5 mb-5'>
+                           <div className='inline-block'>
+                                <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                                      <FontAwesomeIcon 
+                                         icon={faFacebookF}
+                                         size='xl'
+                                   
+                                      />
+                                </span>
+                           </div>
+                           <div className='inline-block ml-5'>
+                                <span className='  w-[45px] h-[45px] flex items-center  justify-center rounded-full bg-white text-[#00acee]  p-[12px]  hover:bg-[#00acee] hover:text-white  cursor-pointer transition-all ease-in-out duration-300 '>
+                                      <FontAwesomeIcon 
+                                         icon={faTwitter}
+                                         size="2x"
+                                   
+                                      />
+                                </span>
+                           </div>
+                           <div className='inline-block ml-5'>
+                                <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                                      <FontAwesomeIcon 
+                                         icon={faLinkedinIn}
+                                         size='xl'
+                                   
+                                      />
+                                </span>
+                           </div>
+                           <div className='inline-block  ml-5'>
+                                <span className='  w-[45px] h-[45px] text-[24px] flex items-center justify-center rounded-full bg-black p-[6px] text-white hover:bg-white hover:text-black  cursor-pointer transition-all ease-in-out duration-300 '>
+                                      <FontAwesomeIcon 
+                                         icon={faGithub}
+                                         size="2x"
+                                   
+                                      />
+                                </span>
+                           </div>
                       </div>
                     </div>
                  </div>

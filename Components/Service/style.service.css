@@ -1,6 +1,5 @@
 @media screen and (max-width: 985px) {
     .responsive-space{
-        height: 200vh;
 
     }
 
@@ -9,7 +8,6 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: nowrap;
-        height: 75%;
     }
 
     .service-text{
@@ -28,7 +26,6 @@
 
 @media screen and (max-width:620px){
     .responsive-space{
-        height: 230vh;
         display: flex;
         flex-direction: column;
     }
@@ -38,7 +35,6 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
-        height: 75%;
     }
 
     .service-text{
@@ -58,7 +54,6 @@
 
 @media screen and (max-width:350px){
     .responsive-space{
-        height: 280vh;
         display: flex;
         flex-direction: column;
     }
@@ -68,7 +63,6 @@
         flex-direction: column;
         justify-content: space-around;
         flex-wrap: nowrap;
-        height: 75%;
     }
 
     .service-text{
