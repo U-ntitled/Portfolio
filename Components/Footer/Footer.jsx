@@ -41,37 +41,45 @@ function Footer() {
           viewport={false}
         className="flex space-x-3 items-center">
         <div className='inline-block'>
+          <a href='https://github.com/U-ntitled' target={'_blank'}>
             <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
                   <FontAwesomeIcon 
                      icon={faFacebookF}
                      size='xl'
                   />
             </span>
+          </a>
         </div>
         <div className='inline-block ml-5'>
-            <span className='  w-[45px] h-[45px] flex items-center  justify-center rounded-full bg-white text-[#00acee]  p-[12px]  hover:bg-[#00acee] hover:text-white  cursor-pointer transition-all ease-in-out duration-300 '>
+          <a href='https://github.com/U-ntitled' target={'_blank'}>
+              <span className='  w-[45px] h-[45px] flex items-center  justify-center rounded-full bg-white text-[#00acee]  p-[12px]  hover:bg-[#00acee] hover:text-white  cursor-pointer transition-all ease-in-out duration-300 '>
                   <FontAwesomeIcon 
                      icon={faTwitter}
                      size="2x"
                   />
             </span>
+          </a>
         </div>
         <div className='inline-block ml-5'>
-          <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
-                <FontAwesomeIcon 
-                   icon={faLinkedinIn}
-                   size='xl'
-             
-                />
-          </span>
+          <a href='https://github.com/U-ntitled' target={'_blank'}>
+            <span className=' w-[45px] h-[45px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                  <FontAwesomeIcon 
+                     icon={faLinkedinIn}
+                     size='xl'
+
+                  />
+            </span>
+          </a>
         </div>
         <div className='inline-block  ml-5'>
-          <span className='  w-[45px] h-[45px] text-[24px] flex items-center justify-center rounded-full bg-black p-[6px] text-white hover:bg-white hover:text-black  cursor-pointer transition-all ease-in-out duration-300 '>
+          <a href='https://github.com/U-ntitled' target={'_blank'}>
+            <span className='  w-[45px] h-[45px] text-[24px] flex items-center justify-center rounded-full bg-black p-[6px] text-white hover:bg-white hover:text-black  cursor-pointer transition-all ease-in-out duration-300 '>
                 <FontAwesomeIcon 
                    icon={faGithub}
                    size="2x"
                 />
-          </span>
+            </span>
+          </a>
         </div>
         </motion.div>
       </div>

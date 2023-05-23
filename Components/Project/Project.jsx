@@ -11,7 +11,7 @@ function Project() {
       <div className="grid grid-cols-1 gap-x-8 gap-y-8 lg:grid-cols-2 project-card ">
           {
             project.map((elem,key)=>(
-              <Card key={key} capture={elem.image} direction={elem.direction} delay={elem.delay}/>
+              <Card key={key} capture={elem.image} direction={elem.direction} delay={elem.delay} description={elem.description}/>
             ))
           }
       </div>

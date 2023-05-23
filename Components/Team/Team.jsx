@@ -3,6 +3,25 @@ import React from 'react'
 import './style.team.css'
 import {motion} from 'framer-motion'
 import {teams as members} from '../../data/teams'
+import { library } from '@fortawesome/fontawesome-svg-core';
+
+import {
+  faGithubAlt,
+  faGoogle,
+  faFacebook,
+  faTwitter,
+  faGithub,
+  faFacebookF,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(
+   faFacebookF,
+   faLinkedinIn,
+   faGithub,
+   faTwitter
+)
 
 function Team() {
   return (
@@ -48,14 +67,35 @@ function Team() {
                   </div>
                 {/* Contants Link */}
                 <div className="flex flex-row w-full justify-center space-x-6 contacts">
-                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
-
+                  <div className='inline-block'>
+                    <a href='https://github.com/U-ntitled' target={'_blank'}>
+                      <span className=' w-[35px] h-[35px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                        <FontAwesomeIcon 
+                        icon={faFacebookF}
+                        size='x'
+                        />
+                      </span>
+                     </a>
                   </div>
-                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
-
-                  </div>
-                  <div className="icons w-[2.5rem] h-[2.5rem] bg-slate-500 rounded-full">
-
+                  <div className='inline-block ml-5'>
+                    <a href='https://github.com/U-ntitled' target={'_blank'}>
+                      <span className=' w-[35px] h-[35px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                        <FontAwesomeIcon 
+                         icon={faLinkedinIn}
+                         size='x'
+                        />
+                      </span>
+                    </a>
+                </div>
+                  <div className='inline-block  ml-5'>
+                    <a href='https://github.com/U-ntitled' target={'_blank'}>
+                      <span className='  w-[35px] h-[35px] text-[24px] flex items-center justify-center rounded-full hover:bg-black p-[6px] hover:text-white bg-white text-black  cursor-pointer transition-all ease-in-out duration-300'>
+                        <FontAwesomeIcon 
+                        icon={faGithub}
+                        size="x"
+                      />
+                      </span>
+                    </a>
                   </div>
                 </div>
               </motion.div>
