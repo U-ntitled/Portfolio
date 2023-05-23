@@ -11,7 +11,7 @@ function NavBar() {
       setY(window.scrollY)
     };
 
-    const sticky = isSticky ? ' bg-bgprimary shadow-sm ' : ''
+    const sticky = isSticky ? ' bg-bgprimary shadow-sm  opacity-80' : ''
     useEffect(() => {
       window.addEventListener("scroll", (e) => handleNavigation(e));
     
