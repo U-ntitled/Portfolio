@@ -18,17 +18,15 @@ export default function Home() {
   let observer = null
   const active = (elem)=>{
     const id = elem.getAttribute('id')
-    console.log(id,1000000)
-    const anchor = document.querySelector(`a[href="#${id}"]`)
-    console.log(anchor,6666666)
-    console.log(anchor)
+    const anchor = document.querySelector(`ul a[href="#${id}"]`)
     if(anchor === null){
       return
     }
     anchor.parentElement.parentElement
     .querySelectorAll('.active')
     .forEach(node=>{
-      node.childNodes.classList.remove('active')
+      console.log(node,9999111111)
+      node.classList.remove('active')
     })
     
     anchor.classList.add('active')
@@ -38,7 +36,6 @@ export default function Home() {
      entries.forEach(entry=>{
        if(entry.intersectionRatio > 0){
         active(entry.target)
-        console.log(entry.target,989898989)
        }
      })
   }
@@ -58,7 +55,6 @@ export default function Home() {
   useEffect(()=>{
     if(ref.current){
       spies = Array.from(ref.current.querySelectorAll('[data-spy]'))
-      console.log(spies)
     }
     if(spies.length > 0){
       observe(spies)
@@ -68,7 +64,6 @@ export default function Home() {
     }
   },[valueOfScroll])
   const HandleScroll = ()=>{
-    console.log(valueOfScroll)
     setValueOfScroll(ancien=>!ancien)
   }
   return (
