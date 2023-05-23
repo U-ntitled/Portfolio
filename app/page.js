@@ -11,7 +11,7 @@ import CopyRight from '@/Components/Footer/CopyRight'
 
 export default function Home() {
   return (
-    <div className='overflow-hidden scroll-smooth'>
+    <div className='overflow-hidden scrollbar scroll-smooth snap-y snap-mandatory scrollbar-track-gray-400/20 scrollbar-thumb-[#1fa1b8]'>
       <header>
         <Hero/>
       </header>

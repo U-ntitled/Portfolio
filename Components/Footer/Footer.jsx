@@ -70,7 +70,6 @@ function Footer() {
                 <FontAwesomeIcon 
                    icon={faGithub}
                    size="2x"
-             
                 />
           </span>
         </div>

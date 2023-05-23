@@ -110,7 +110,7 @@ function Hero() {
                           initial={{opacity:0, x:-70}}
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.9 , delay:0.4}} 
-                          className=' w-[15ch] text-[36px]  sm md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize'>
+                          className={`${styles.title} w-[15ch] text-[36px]  sm md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize`}>
                               We build <span className='bg-btnprimary'>innovative</span> Software Solutions
                         </motion.h1>
                       <div>
@@ -188,7 +188,7 @@ function Hero() {
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.6 , delay:0.4}}  
                           className=' hidden flex-1  lg:flex justify-center z-1'>
-                      <img src='hero.svg' className='w-[600px] z-10'/>
+                      <img src='hero.svg' className={`${styles.image} w-[600px] z-10`}/> 
                  </motion.div>
            </div>
            <div className='  absolute bottom-[-16] w-full  md:w-[60%]  md:left-[20%] z-30  '>
