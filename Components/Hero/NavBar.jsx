@@ -25,7 +25,7 @@ function NavBar() {
                     initial={{opacity:0, x:-50}}
                     animate= {{ opacity:1 , x:0}}
                     transition={{ duration:0.9 }}
-                      className='w-[50%] lg:flex-1 p-2'
+                      className='w-[40%]  p-2'
                 >
                      {/* <img  src='LOGO.svg' alt='our logo' style={{width:220, height:100}}/> */}
                      <Image 
@@ -43,7 +43,7 @@ function NavBar() {
                          transition={{ duration:0.7 }}
                          className='relative'
                     >
-                      <a href='#'>Home</a>
+                      <a href='#hero' className='active'>Home</a>
                     </motion.li>
                     <motion.li 
                          initial={{opacity:0 , scale:0}}
