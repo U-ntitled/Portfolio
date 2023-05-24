@@ -12,7 +12,7 @@ export const teams = [
       direction: true
     },
     {
-      avatarUrl: '/Nomena.jpg',
+      avatarUrl: '/nomena.jpg',
       fullName: 'ANDRIANIAINA Fanomezantsoa Nomena',
       domain:'MERN Stack, Mobile Developper',
       contacts:{
@@ -37,7 +37,7 @@ export const teams = [
       direction:true
     },
     {
-      avatarUrl: '/Riry.jpg',
+      avatarUrl: '/riry.jpg',
       fullName: 'NOMENJANAHARY Riry',
       domain:'Fullstack Developper',
       contacts:{

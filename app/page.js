@@ -21,7 +21,7 @@ export default function Home() {
     const anchor = document.querySelector(`ul a[href="#${id}"]`)
     if(anchor === null){
       return
-    }
+    }  
     anchor.parentElement.parentElement
     .querySelectorAll('.active')
     .forEach(node=>{

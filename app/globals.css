@@ -48,9 +48,28 @@ nav ul li a:hover::after{
  
 }
 
+
+
 .active{
    color: #B73BF0;
 }
+#menu-burger{
+   cursor: pointer;
+   transition: all 400ms ease-in-out;
+}
+
+#menu-burger:hover > div {
+   background:#B73BF0;
+} 
+
+#menu-burger:hover .middle{
+   width: 100%;
+}
+#menu-burger:hover .left{
+  width: 75%;
+}
+
+
 @keyframes linear {
      0% {
          left: 5%;

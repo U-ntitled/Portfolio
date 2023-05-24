@@ -51,7 +51,7 @@ function Team() {
               key={key} className={elem.classes}>
                 {/* Avatar */}
                 <div className="avatar w-[8.5rem] h-[8.5rem] rounded-ful flex justify-center c">
-                    <Image src={elem.avatarUrl} alt='Avatar' width={200} height={100} className='rounded-full' />
+                    <Image src={elem.avatarUrl} alt='Avatar' width={200} height={100} className='rounded-full object-cover' />
                 </div>
 
                 {/* Abouts */}

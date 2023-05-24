@@ -6,9 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import NavBar from './NavBar';
 
 import {
-  faGithubAlt,
-  faGoogle,
-  faFacebook,
+
   faTwitter,
   faGithub,
   faFacebookF,
@@ -30,7 +28,7 @@ function Hero() {
 
      
   return (
-    <div className={`${styles.SpecialScreen} w-full min-h-screen bg-bgprimary font-Exo2`}>
+    <div className={`${styles.SpecialScreen} w-full min-h-screen bg-bgprimary font-Exo2 relative`}>
            <span id='hero'/>
             <NavBar/>
            <div className=''>
@@ -52,13 +50,13 @@ function Hero() {
                   </span>
            </div>
            <div className=' w-[95%] h-[82vh]  flex justify-between pt-[8vh]  m-auto md:w-[80%] lg:w-[85%] mb-8'>
-                 <div className=' flex-1 flex mt-20 justify-center z-10'>
+                 <div className=' flex-1 flex mt-14 md:mt-20 justify-center z-10'>
                     <div className=' w-full  p-4 lg:w-[85%]'>
                         <motion.h1 
                           initial={{opacity:0, x:-70}}
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.9 , delay:0.4}} 
-                          className={`${styles.title} w-[15ch] text-[36px]  sm md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize`}>
+                          className={`${styles.title} w-full text-[24px]  md:text-[64px]  leading-tight font-bold  md:py-5 text-white capitalize`}>
                               We build <span className='bg-btnprimary'>innovative</span> Software Solutions
                         </motion.h1>
                       <div>
