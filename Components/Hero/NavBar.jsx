@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image';
-function NavBar() {
+function NavBar({ToggleOpen, isOpen}) {
     const [isSticky, setISticky] = useState(false);
     const [y, setY] = useState(0)
   
@@ -20,7 +20,7 @@ function NavBar() {
       };
     }, [y]);
   return (
-    <nav className={`${sticky} flex justify-between items-center w-full  md:h-[100px] font-semibold px-3 md:px-10 text-white  z-30 fixed transition-all duration-500`}>
+    <nav className={`${sticky} flex justify-between items-center w-full  md:h-[70px] font-semibold px-3 md:px-10 text-white  z-30 fixed transition-all duration-500`}>
 
                 <motion.div  
                     initial={{opacity:0, x:-50}}
@@ -96,7 +96,9 @@ function NavBar() {
                     className='hidden  lg:block md:flex-[1/2]'>
                     <a href='#contact' className='inline-block py-3 px-5 text-[20px] font-semibold  rounded-md   bg-btnprimary mt-2  cursor-pointer'>CONTACT US</a>
                 </motion.div>
-                <div className='flex flex-col items-end  md:hidden' id='menu-burger'>
+                <div 
+                    onClick={() => ToggleOpen(!isOpen)}
+                    className='flex flex-col items-end  md:hidden' id='menu-burger'>             
                      <div className='w-10 flex  h-[6px] bg-white rounded-lg left mb-2'></div>
                      <div className='w-8 h-[6px] bg-white rounded-lg  mb-2 middle'></div>
                      <div className='w-9 h-[6px] bg-white rounded-lg '></div>

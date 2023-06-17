@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import  styles  from './style.module.css'
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -21,16 +21,21 @@ library.add(
 )
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NavBarMobile from './NavBarMobile';
 
 
 
 function Hero() {
-
+     const [open, setOpen] = useState(false)   
      
   return (
     <div className={`${styles.SpecialScreen} w-full min-h-screen bg-bgprimary font-Exo2 relative`}>
+          {
+               open && <NavBarMobile isOpen={open}  ToggleOpen={setOpen}/>
+          }
+           
            <span id='hero'/>
-            <NavBar/>
+            <NavBar ToggleOpen={setOpen} isOpen={open}/>
            <div className=''>
                   <span className='absolute left-[40%] z-0'>
                       <Image 
