@@ -54,7 +54,7 @@ function Hero() {
                       />
                   </span>
            </div>
-           <div className=' w-[95%] h-[82vh]  flex justify-between pt-[8vh]  m-auto lg:w-[80%]  mb-8'>
+           <div className=' w-[95%] h-[82vh]  flex justify-between items-start pt-[8vh]  m-auto lg:w-[80%]  mb-8'>
                  <div className=' flex-1 flex mt-14 md:mt-20 justify-center z-10'>
                     <div className=' w-full  p-4 '>
                         <motion.h1 
@@ -138,8 +138,8 @@ function Hero() {
                           initial={{opacity:0, x:70}}
                           animate= {{ opacity:1 , x:0}}
                           transition={{ duration:0.6 , delay:0.4}}  
-                          className=' hidden flex-1  lgl:flex justify-center z-1'>
-                      <img src='hero.svg' className={`${styles.image} max-w-[500px] z-10`}/> 
+                          className=' hidden flex-1  lgl:flex justify-center  z-1'>
+                      <img src='hero.png' className={`${styles.image} max-w-[500px] z-10`}/> 
                  </motion.div>
            </div>
            <div className='absolute bottom-[-16] w-full px-5   lg:max-w-[70%]  lg:left-[15%] z-20  '>
