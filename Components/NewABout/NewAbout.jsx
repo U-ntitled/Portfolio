@@ -40,7 +40,7 @@ function NewAbout() {
                
                 <div className='hidden  lgl:flex-1  lgl:flex justify-end'>
                     <Image
-                        src='Girl.svg'
+                        src=''
                         width={350}
                         height={250}
                         alt='an image about untiled'
