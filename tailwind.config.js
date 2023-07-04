@@ -6,6 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens:{
+        md:"800px",
+        lg:"1000px",
+        'xxl':"1340px"
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -23,9 +28,12 @@ module.exports = {
 
     
       screens: {
-        'lg': '843px',
+        // 'lg': '843px',
          'xlg':'1400px',
         // => @media (min-width: 843px) { ... }
+          'lgm':'1275px',
+          'lgl': '1100px',
+           
         'tg': '800px',
         'xxs': '369px'
       }

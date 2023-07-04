@@ -9,11 +9,15 @@ import Contact from '../Components/Contact/Contact'
 import Footer from '../Components/Footer/Footer'
 import CopyRight from '@/Components/Footer/CopyRight'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
+import Head from 'next/head'
+
 
 export default function Home() {
   let spies = []
   const ref = useRef(null)
   const [valueOfScroll, setValueOfScroll] = useState(true)
+  const [isLoading,setIsLoading] = useState(true)
   const ratio = .6
   let observer = null
   const active = (elem)=>{
@@ -66,35 +70,52 @@ export default function Home() {
   const HandleScroll = ()=>{
     setValueOfScroll(ancien=>!ancien)
   }
+  useEffect(()=>{
+      setIsLoading(false);
+  },[isLoading])
   return (
-    <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  snap-mandatory scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
-      <header id='hero' className='snap-start' data-spy>
-        <Hero/>
-      </header>
-      {/* <main> */}
-        <section id='about' data-spy className='snap-center'>
-          <About/>
-        </section>
-        <section id='service' data-spy className='snap-center'>
-          <Service/>
-        </section>
-        <section id='project' data-spy className='snap-center'>
-          <Project/>
-        </section>
-        <section id='team' data-spy className='snap-center'>
-          <Team/>
-        </section>
-        <section id='transition' data-spy className='snap-center'>
-          <Transition/>
-        </section>
-        <section id='contact' data-spy className='snap-center'>
-          <Contact/>
-        </section>
-        <footer id='footer' data-spy className='snap-center'>
-          <Footer/>
-          <CopyRight/>
-        </footer>
-      {/* </main> */}
-    </div>
+    <>
+    <Head>
+      <title>Untitled</title>
+    </Head>
+      {
+        isLoading ? (
+            <div className='h-[100vh] w-full bg-bgprimary flex justify-center items-center'>
+              <Image width={550} height={550} src='/animation.gif' alt='animation pour le chargement...'/>
+            </div>
+        ):(
+         
+        <div ref={ref} onScroll={HandleScroll} className='overflow-hidden  snap-mandatory scrollbar scrollbar-thumb-yellow-400 scrollbar-track-red-600 '>
+          <header id='hero' className='snap-start' data-spy>
+            <Hero/>
+          </header>
+          {/* <main> */}
+            <section id='about' data-spy className='snap-center'>
+              <About/>
+            </section>
+            <section id='service' data-spy className='snap-center'>
+              <Service/>
+            </section>
+            <section id='project' data-spy className='snap-center'>
+              <Project/>
+            </section>
+            <section id='team' data-spy className='snap-center'>
+              <Team/>
+            </section>
+            <section id='transition' data-spy className='snap-center'>
+              <Transition/>
+            </section>
+            <section id='contact' data-spy className='snap-center'>
+              <Contact/>
+            </section>
+            <footer id='footer' data-spy className='snap-center'>
+              <Footer/>
+              <CopyRight/>
+            </footer>
+          {/* </main> */}
+        </div>
+        )
+      }
+    </>
   )
 }

@@ -26,18 +26,18 @@ function NavBar({ToggleOpen, isOpen}) {
                     initial={{opacity:0, x:-50}}
                     animate= {{ opacity:1 , x:0}}
                     transition={{ duration:0.9 }}
-                    className='w-[45%]   p-2'
+                    // className='max-w-[100px] h-full  p-2'
                 >
                      {/* <img  src='LOGO.svg' alt='our logo' style={{width:220, height:100}}/> */}
                      <Image 
                          src='LOGO.svg'
-                         width={250}
-                         height={250}
+                         width={200}
+                         height={200}
                          alt='Logo of untitled'
                      />
                 </motion.div>
                 <motion.ul 
-                    className=' hidden text-[1rem]  md:flex-1 gap-3 md:flex  md:text-[1.2] lg:gap-7 lg:text-[1.3rem]' >
+                    className=' hidden text-[1.1rem]  md:flex-1 gap-5  md:flex justify-center  md:text-[1.2] lg:gap-7 lg:text-[1.2rem]' >
                     <motion.li 
                          initial={{opacity:0 , scale:0}}
                          animate= {{ opacity:1 , scale:1}}
@@ -93,7 +93,7 @@ function NavBar({ToggleOpen, isOpen}) {
                     animate= {{ opacity:1 , x:0}}
                     transition={{ duration:0.9 }}
 
-                    className='hidden  lg:block md:flex-[1/2]'>
+                    className='hidden  lg:block'>
                     <a href='#contact' className='inline-block py-3 px-5 text-[20px] font-semibold  rounded-md   bg-btnprimary mt-2  cursor-pointer'>CONTACT US</a>
                 </motion.div>
                 <div 
