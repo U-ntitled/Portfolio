@@ -1,3 +1,5 @@
+import Project from "./Components/Project/Project"
+import Exxpertise from "./Components/Expertise/Exxpertise"
 import Hero from "./Components/Hero/Hero"
 import { teams  } from "./teams"
 export default function Portofolio ({params}) {
@@ -11,17 +13,12 @@ export default function Portofolio ({params}) {
     return (
         <>
             <Hero/>
-            <main className="main-content">
+            <main className="">
                 <section className="expertise">
-                    <div className="expertise-left">
-
-                    </div>
-                    <div className="expertise-right">
-
-                    </div>
+                    <Exxpertise/>
                 </section>
                 <section className="portfolio">
-                    My portfolio section
+                    <Project/>
                 </section>
                 <section className="skills">
                     Skills section wella

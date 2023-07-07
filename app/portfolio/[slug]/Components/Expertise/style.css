@@ -1,0 +1,27 @@
+.epertise-bg{
+    /*-webkit-clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);
+    clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);*/   
+    clip-path: polygon(0 16%, 100% 0%, 100% 83%, 0% 100%);
+    background-color: #171135;
+  }
+  
+  /* .text-stroke{
+      -webkit-text-fill-color: transparent;
+      font-family: sans-serif;
+  }
+  .logo{
+    -webkit-text-stroke: 1px #171135;
+      font-size: 2rem;
+      font-weight: 700;
+  } */
+  .expertise-title{
+    font-size: 2.2rem;
+    -webkit-text-stroke: 0.5px #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif !important;
+    stroke-linecap: round;
+    -webkit-text-fill-color: transparent;
+  }
+  
+.expertise{
+    background: radial-gradient(circle, rgb(11, 10, 58) 0%, rgb(2, 0, 36) 100%);
+  }
