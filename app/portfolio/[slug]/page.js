@@ -1,3 +1,4 @@
+import Hero from "./Components/Hero/Hero"
 import { teams  } from "./teams"
 export default function Portofolio ({params}) {
     let info
@@ -9,8 +10,33 @@ export default function Portofolio ({params}) {
     })
     return (
         <>
-        <h1>djfjksdhkfhkqshdfkhqkhfkqsjh {info.fname}</h1>
-       </>
+            <Hero/>
+            <main className="main-content">
+                <section className="expertise">
+                    <div className="expertise-left">
+
+                    </div>
+                    <div className="expertise-right">
+
+                    </div>
+                </section>
+                <section className="portfolio">
+                    My portfolio section
+                </section>
+                <section className="skills">
+                    Skills section wella
+                </section>
+                <section className="experience">
+                    Experience section
+                </section>
+                <section className="contact">
+                    contact section
+                </section>
+            </main>
+            <footer>
+                My footer
+            </footer>
+        </>
     )
         
 }
