@@ -97,13 +97,13 @@
         height: 92%;
         width: 42.7%;
     }
+    .contacts{
+        padding-bottom: 1rem;
+    }
 }
-@media screen and (max-width: 633px){
-    /* .members-cards{
-        height: 75%;
-    } */
+@media screen and (max-width:801px) {
     .upLeft, .upRight, .bLeft, .bRight{
-        width: 90%;
+        width: 95%;
         height: 97%;
         margin: 0;
         padding-top: 0.4rem;
@@ -111,9 +111,31 @@
     .center{
         padding-top: 0.4rem;
         height: 97%;
-        width: 45%;
+        width: 48.5%;
         margin-top: 0;
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 633px){
+    /* .members-cards{
+        height: 75%;
+    } */
+    .members-cards{
+        height: auto;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.8rem;
+    } 
+    .upLeft, .upRight, .bLeft, .bRight, .center{
+        width: 75%;
+        height: 97%;
+        margin: 0;
+        padding-top: 0.4rem;
     }
     .fnames{
         font-size: .9rem;
@@ -127,16 +149,6 @@
     }
 }
 @media screen and (max-width:496px) {
-    .members-cards{
-        height: auto;
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-    }   
     .titles p{
         margin-top: 0.8rem;
     }
@@ -170,6 +182,19 @@
     .upLeft, .upRight, .bLeft, .bRight, .center{
         width: 100%;
     } 
+    .icons{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:300px) {
+    
+    .upLeft, .upRight, .bLeft, .bRight, .center{
+        width: 100%;
+    } 
+    .contacts{
+        width: 80%;
+    }
     .icons{
         margin-left: 0;
         margin-right: 0;

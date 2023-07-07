@@ -54,8 +54,8 @@ export const teams = [
       domain:'Junior Data Scientist',
       contacts: {
         faceboook:'',
-        github:'https://github.com/nirintsoa',
-        linkedin:'',
+        github:'https://github.com/Emii-lia',
+        linkedin:'https://www.linkedin.com/in/fiaro-voniarimalala/',
       },
       classes:'bRight',
       direction:true

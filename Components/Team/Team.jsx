@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import './style.team.css'
 import {motion} from 'framer-motion'
 import {teams as members} from '../../data/teams'
 import { library } from '@fortawesome/fontawesome-svg-core';
 import Image from 'next/image'
+import './style.team.css'
 
 import {
   faTwitter,
@@ -45,61 +45,62 @@ function Team() {
         <div className="h-[82%] members-cards">
           {
             members.map((elem,key)=>(
-              <Link href={`portfolio/riry`} >
                   <motion.div 
                   initial={{x: elem.direction ? -100 : 100,opacity:0}}
                   transition={{duration: 0.5 }}
                   whileInView={{x:0,opacity:1}}
                   key={key} className={elem.classes}>
-                    {/* Avatar */}
-                    <div className="avatar w-[8.5rem] h-[8.5rem] rounded-ful flex justify-center c">
-                        <Image src={elem.avatarUrl} alt='Avatar' width={200} height={100} className='rounded-full object-cover' />
-                    </div>
 
-                    {/* Abouts */}
-                      {/* Name */}
-                      <div className="text-center flex justify-center max-w-[75%] fnames-container">
-                        <h2 className='text-[#0A0E26] font-bold fnames'>{elem.fullName}</h2>
+                      <Link href={`portfolio/riry`}>
+                        {/* Avatar */}
+                        <div className="avatar w-[8.5rem] h-[8.5rem] rounded-ful flex justify-center">
+                            <Image src={elem.avatarUrl} alt='Avatar' width={200} height={100} className='rounded-full object-cover' />
+                        </div>
+                      </Link>  
+
+                      {/* Abouts */}
+                        {/* Name */}
+                        <div className="text-center flex justify-center max-w-[75%] fnames-container">
+                          <h2 className='text-[#0A0E26] font-bold fnames'>{elem.fullName}</h2>
+                        </div>
+                        {/* Funtion */}
+                        <div className="max-w-[75%] text-center domain-container">
+                          <p className='text-[#BA38F2] font-bold domain'>{elem.domain}</p>
+                        </div>
+                      {/* Contants Link */}
+                      <div className="flex flex-row w-full justify-center p-0 space-x-6  contacts">
+                        <div className='inline-block p-0'>
+                          <a href='https://github.com/U-ntitled' target={'_blank'}>
+                            <span className='icon-span w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full  p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                              <FontAwesomeIcon 
+                              icon={faFacebookF}
+                              size='x'
+                              />
+                            </span>
+                          </a>
+                        </div>
+                        <div className='inline-block p-0 m-0'>
+                          <a href={elem.contacts.linkedin} target={'_blank'} className=''>
+                            <span className='icon-span w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full  p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
+                              <FontAwesomeIcon 
+                              icon={faLinkedinIn}
+                              size='x'
+                              />
+                            </span>
+                          </a>
                       </div>
-                      {/* Funtion */}
-                      <div className="max-w-[75%] text-center domain-container">
-                        <p className='text-[#BA38F2] font-bold domain'>{elem.domain}</p>
-                      </div>
-                    {/* Contants Link */}
-                    <div className="flex flex-row w-full justify-center space-x-6 contacts">
-                      <div className='inline-block'>
-                        <a href='https://github.com/U-ntitled' target={'_blank'}>
-                          <span className=' w-[35px] h-[35px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
-                            <FontAwesomeIcon 
-                            icon={faFacebookF}
-                            size='x'
+                        <div className='inline-block p-0'>
+                          <a href={elem.contacts.github} target={'_blank'}>
+                            <span className='icon-span  w-[2.2rem] h-[2.2rem] text-[24px] flex items-center justify-center rounded-full hover:bg-black p-[6px] hover:text-white  text-black  cursor-pointer transition-all ease-in-out duration-300'>
+                              <FontAwesomeIcon 
+                              icon={faGithub}
+                              size="x"
                             />
-                          </span>
-                        </a>
+                            </span>
+                          </a>
+                        </div>
                       </div>
-                      <div className='inline-block ml-5'>
-                        <a href='https://github.com/U-ntitled' target={'_blank'}>
-                          <span className=' w-[35px] h-[35px] flex items-center justify-center rounded-full bg-white   p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
-                            <FontAwesomeIcon 
-                            icon={faLinkedinIn}
-                            size='x'
-                            />
-                          </span>
-                        </a>
-                    </div>
-                      <div className='inline-block  ml-5'>
-                        <a href={elem.contacts.github} target={'_blank'}>
-                          <span className='  w-[35px] h-[35px] text-[24px] flex items-center justify-center rounded-full hover:bg-black p-[6px] hover:text-white bg-white text-black  cursor-pointer transition-all ease-in-out duration-300'>
-                            <FontAwesomeIcon 
-                            icon={faGithub}
-                            size="x"
-                          />
-                          </span>
-                        </a>
-                      </div>
-                    </div>
                   </motion.div>
-              </Link>
             ))
           }
         </div>
