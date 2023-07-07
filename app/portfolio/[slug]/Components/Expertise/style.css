@@ -1,7 +1,9 @@
 .epertise-bg{
     /*-webkit-clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);
-    clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);*/   
+    clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);*/  
+    /* clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);  */
     clip-path: polygon(0 16%, 100% 0%, 100% 83%, 0% 100%);
+    /* clip-path: polygon(0 13%, 100% 0%, 100% 91%, 0% 100%); */
     background-color: #171135;
   }
   
@@ -24,4 +26,36 @@
   
 .expertise{
     background: radial-gradient(circle, rgb(11, 10, 58) 0%, rgb(2, 0, 36) 100%);
+  }
+  .expertise-sub-title{
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: bold;
+    background: linear-gradient(to right, #25DEEA, #37BB8A);
+    background-clip: text;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cart-title{
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: bold;
+    background: linear-gradient(to right, #C525EA 50%, #37BB8A 100%);
+    background-clip: text;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .cart{
+    box-shadow: #0A0E26 0px 7px 29px 0px;
+  }
+  .view-more{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .view-more:hover{
+    cursor: pointer;
   }
