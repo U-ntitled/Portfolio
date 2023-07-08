@@ -1,6 +1,7 @@
 import Image from 'next/image'
-import React from 'react'
+// import React, { useState } from 'react'
 import './style.css';
+// import dynamic from 'next/dynamic';
 
 const cart=[{
   title: "Web development",
@@ -29,12 +30,32 @@ const cart=[{
   fin: true
 }]
 function Exxpertise() {
+  // const [isShow,setIsShow] = useState(false)
+//   let isShow= false
+//   const HandleClickViewMore = (e)=>{
+//       isShow = false
+//   }
+//   const InteractiveComponent = dynamic((elem) => 
+//   <>
+//     <Image className='view-more' onClick={HandleClickViewMore}  src={elem.image} alt={elem.title} width={50} height={50}/>
+//     {
+//       isShow && (
+//         <button className='bg-[#25DEEA] text-white   rounded-xl btn-more '>
+//           View project
+//         </button>
+//       )
+//     }
+//  </>
+//   , {
+//     ssr: false // Indique que le composant ne doit pas être rendu côté serveur
+//   });
+
   return (
     <div className=' w-full   expertise '>
-      <div className="w-full    epertise-bg  space-y-8  pt-[20vh] pb-[23vh] px-10 ">
-      <h2 className='uppercase expertise-title '>expertise</h2>
-      <div className="flex space-x-10 w-full" >
-        <div className="flex flex-col space-y-4 w-[40%]">
+      <div className="w-full    epertise-bg  space-y-8  md:pt-[16vh] dll:pt-[30vh] max-xxs:pt-[33vh] pt-[40vh] md:pb-[28vh] dll:pb-[33vh] max-xxs:pb-[38vh] pb-[42vh] px-5 md:px-10 ">
+      <h2 className='uppercase expertise-title max-xxs:pt-0 pt-[10vh]'>expertise</h2>
+      <div className="flex md:space-x-10 w-full flex-col space-y-10 md:space-y-0 md:flex-row" >
+        <div className="flex flex-col space-y-4  md:w-[40%]">
           <h2 className='expertise-sub-title'>
             WANT TO BRING IDEA INTO REALITY ? 
           </h2>
@@ -49,15 +70,19 @@ function Exxpertise() {
               </button>
           </div>
         </div> 
-            <div className="w-[60%] grid grid-cols-2 gap-4">
+            <div className="md:w-[60%] grid  dll:grid-cols-2 grid-cols-1 gap-4">
                 {
-                  cart.map((elem,key)=>(
+                  cart.map((elem,key)=>(  
                       (elem.fin) ? (
-                      <div className=" bg-[#0A0E26] rounded-xl p-5 cart w-[25vw] relative " key={key}>
-                            <Image className='view-more' src={elem.image} alt={elem.title} width={50} height={50}/>
+                      <div className=" bg-[#0A0E26] rounded-xl p-5 cart md:w-[350px] md:h-[300px] h-[250px] relative " key={key}>
+                        {/* <InteractiveComponent elem={elem}/> */}
+                        <Image className='view-more'   src={elem.image} alt={elem.title} width={50} height={50}/>
+                        <button className='bg-[#25DEEA] text-white   rounded-xl btn-more '>
+                          View project
+                        </button>
                       </div>
                       ):(
-                        <div className=" bg-[#0A0E26] rounded-xl p-5 cart w-[25vw] " key={key}>
+                        <div className=" bg-[#0A0E26] rounded-xl p-5 cart  md:w-[350px] md:h-[300px] " key={key}>
                         <div className="flex flex-col space-y-3">
                           <Image src={elem.image} width={50} height={50} alt={elem.title}/>
                           <h5 className='font-Exo2'> <span className='cart-title uppercase'>{elem.title}</span></h5>

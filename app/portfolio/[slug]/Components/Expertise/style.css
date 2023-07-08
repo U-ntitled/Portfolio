@@ -59,3 +59,18 @@
   .view-more:hover{
     cursor: pointer;
   }
+  
+  .btn-more{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 40px;
+  }
+  .show{
+    opacity: 1;
+  }
+  .hidden{
+    opacity: 0;
+  }
