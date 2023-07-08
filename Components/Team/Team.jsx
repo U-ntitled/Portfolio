@@ -74,7 +74,7 @@ function Team() {
                             <span className='icon-span w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full  p-[6px] text-[#3b5998] hover:bg-[#3b5998] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
                               <FontAwesomeIcon 
                               icon={faFacebookF}
-                              size='x'
+                              size='1x'
                               />
                             </span>
                           </a>
@@ -84,7 +84,7 @@ function Team() {
                             <span className='icon-span w-[2.2rem] h-[2.2rem] flex items-center justify-center rounded-full  p-[6px] text-[#0072b1] hover:bg-[#0072b1] hover:text-white cursor-pointer transition-all ease-in-out duration-300 '>
                               <FontAwesomeIcon 
                               icon={faLinkedinIn}
-                              size='x'
+                              size='1x'
                               />
                             </span>
                           </a>
@@ -94,7 +94,7 @@ function Team() {
                             <span className='icon-span  w-[2.2rem] h-[2.2rem] text-[24px] flex items-center justify-center rounded-full hover:bg-black p-[6px] hover:text-white  text-black  cursor-pointer transition-all ease-in-out duration-300'>
                               <FontAwesomeIcon 
                               icon={faGithub}
-                              size="x"
+                              size="1x"
                             />
                             </span>
                           </a>
