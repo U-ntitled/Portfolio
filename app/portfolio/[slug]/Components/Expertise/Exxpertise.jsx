@@ -31,10 +31,10 @@ const cart=[{
 function Exxpertise() {
   return (
     <div className=' w-full   expertise '>
-      <div className="w-full    epertise-bg md:flex md:items-center md:flex-col  space-y-8  pt-[20vh] pb-[23vh] px-10 ">
+      <div className="w-full    epertise-bg  space-y-8  pt-[20vh] pb-[23vh] px-10 ">
       <h2 className='uppercase expertise-title '>expertise</h2>
-      <div className="flex space-x-10 w-full flex-col md:justify-between items-center justify-center" >
-        <div className="flex flex-col space-y-4 md:w-[40%] w-full">
+      <div className="flex space-x-10 w-full" >
+        <div className="flex flex-col space-y-4 w-[40%]">
           <h2 className='expertise-sub-title'>
             WANT TO BRING IDEA INTO REALITY ? 
           </h2>
@@ -49,7 +49,7 @@ function Exxpertise() {
               </button>
           </div>
         </div> 
-            <div className="md:w-[60%] w-full grid grid-cols-2 gap-4 md:mt-5">
+            <div className="w-[60%] grid grid-cols-2 gap-4">
                 {
                   cart.map((elem,key)=>(
                       (elem.fin) ? (
