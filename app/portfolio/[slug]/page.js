@@ -1,6 +1,7 @@
 import Project from "./Components/Project/Project"
 import Exxpertise from "./Components/Expertise/Exxpertise"
 import Hero from "./Components/Hero/Hero"
+import Skills from "./Components/skills/Skills"
 import { teams  } from "./teams"
 export default function Portofolio ({params}) {
     let info
@@ -21,7 +22,7 @@ export default function Portofolio ({params}) {
                     <Project/>
                 </section>
                 <section className="skills">
-                    Skills section wella
+                    <Skills/>
                 </section>
                 <section className="experience">
                     Experience section

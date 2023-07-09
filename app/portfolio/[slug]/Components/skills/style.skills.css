@@ -1,0 +1,45 @@
+.skills-bg{
+    /*-webkit-clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);
+    clip-path: polygon(0 34%, 100% 21%, 100% 87%, 0% 100%);*/  
+    /* clip-path: polygon(0 7%, 100% 0%, 100% 93%, 0% 100%);  */
+    /* clip-path: polygon(0 13%, 100% 0%, 100% 91%, 0% 100%); */
+    background-color: #171135;
+  }
+
+  .back-style{
+    font-size: 1rem;
+    line-height: 120%;
+    font-weight: bold;
+    background: linear-gradient(to right, #C525EA 50%, #37BB8A 100%);
+    /* background-clip: text;
+    letter-spacing: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+  }
+
+  .round-side{
+      background-color: #C525EA;
+      border-radius: 100%;
+      position: relative;
+      margin-bottom: -10px;
+  }
+
+  #souligne::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #C525EA;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -6px;
+    margin-left: -2px;
+  }
+  
+  .skills-sub-title{
+      margin-top: 10vh;
+      margin-left: 10vh;
+  }
+
+  .lspace{
+      letter-spacing: 2px;
+  }
